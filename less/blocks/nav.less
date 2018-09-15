@@ -1,0 +1,134 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;    
+
+    .nav__metro {
+        display: flex;             
+        height: 12px;
+        margin-top: 45px;
+
+        .nav__metro-text { 
+            display: block;
+            margin-left: 7px;                              
+            font-size: 11px;            
+            color: #FF8700;           
+        }
+    }
+
+    .nav__logo {
+        margin-right: 30px;
+        background: @brown;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+
+        .nav__logo-link {
+            text-decoration: none;            
+
+            .nav__logo-img {
+                padding: 0 5px;
+                padding-top: 30px;
+                margin-bottom: 8px;
+            }
+
+            .nav__logo-text {
+                display: block;
+                margin: 0 auto;
+                width: 57px;
+                text-align: center;
+                font-size: 8px;                
+                color: #FFE0BE;
+                margin-bottom: 13px;
+            }
+        }        
+
+        &:hover {
+            background: linear-gradient(to right, rgba(101, 72, 63, 1), rgba(36, 15, 0, 1));
+        }
+    }
+
+    .nav__open-button {
+        position: relative;
+        margin-top: 28px;
+        width: 40px;
+        height: 38px;
+        border: 1px solid @brown;
+        border-radius: 7px;
+        background: white;
+        cursor: pointer;
+
+        div {
+            position: absolute;
+            width: 24px;
+            height: 4px;
+            left: 7px;
+            top: 16px;
+            background: @brown;
+            border-radius: 7px;
+
+            &:first-of-type {
+                top: 7px;
+            }
+
+            &:last-of-type {
+                top: 25px;
+            }
+        }
+    }
+
+    .nav__close-button {
+        display: none;
+        position: relative;
+        margin-top: 28px;
+        width: 40px;
+        height: 38px;
+        border: 1px solid @brown;
+        border-radius: 7px;
+        background: white;
+        cursor: pointer;
+
+        div {
+            position: absolute;
+            width: 27px;
+            height: 2px;
+            left: 5.5px;
+            top: 17px;
+            background: @brown;
+            border-radius: 7px;
+            transform: rotate(45deg);
+
+            &:last-of-type {
+                transform: rotate(135deg); 
+            }
+        }
+    }
+
+    .nav__menu-mobile {
+        display: none;
+        flex-direction: column;
+        width: 182px;
+        margin: 0 auto;
+        margin-top: 20px;
+
+        .nav__menu-mobile-item {                   
+
+            .nav__menu-mobile-link {
+                display: block;                
+                border-radius: 5px;
+                padding: 5px 0;
+                text-decoration: none;
+                color: @brown;
+                font-size: 18px;
+
+                &:hover {
+                    box-shadow: 0 5px 15px -7px;
+                }
+            }
+        }
+    }
+
+    .nav__menu {
+        display: none;
+    }
+}
