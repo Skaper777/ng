@@ -716,10 +716,12 @@ template {
 }
 .catalog .catalog__item:nth-of-type(2) {
   background-image: url(../img/women.jpg);
+  background-position-y: 21%;
 }
 .catalog .catalog__item:last-of-type {
   background-image: url(../img/children.jpg);
   margin-bottom: 28px;
+  background-position-y: 20%;
 }
 .catalog .catalog__item .catalog__item-link {
   display: block;
@@ -813,4 +815,15 @@ template {
 }
 .page-footer .page-footer__ad .page-footer__ad-text .page-footer__ad-link {
   color: #D82F2D;
+}
+.masters .masters__list-item .masters__list-link .masters__list-img {
+  width: 288px;
+}
+.masters .masters__info {
+  text-align: center;
+  margin-bottom: 6px;
+}
+.masters .masters__info span {
+  color: #B59979;
+  font-size: 18px;
 }
