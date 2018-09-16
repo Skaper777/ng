@@ -1,0 +1,95 @@
+.hairdressing {
+    padding: 0 15px;
+    margin-top: 40px;
+
+    .hairdressing__textblock {
+        font-size: 14px;
+
+        span {
+            display: block;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .hairdressing-length {
+        .hairdressing-length__item {
+            background-image: url(../img/shortcut.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-radius: 7px;
+            box-shadow: 5px 5px 7px -1px; 
+            
+            &:nth-of-type(2) {
+                background-image: url(../img/middle.jpg);
+            }
+
+            &:last-of-type {
+                background-image: url(../img/long.jpg);
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            span {
+                display: block;
+                color: white;
+                padding-top: 328px;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .hairdressing-services {
+        margin-bottom: 60px;
+
+        .hairdressing-services__title {
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .hairdressing-services__link {
+            text-decoration: none;            
+        }
+
+        .hairdressing-services__item {
+            width: 270px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            background-image: url(../img/nail.jpg);
+            background-repeat: no-repeat;
+            border: 1px solid #EFC99F;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px -5px;
+            
+            &:hover {
+                background-color: #FDF8F3;
+            }
+
+            &:nth-of-type(2) {
+                background-image: url(../img/brows.jpg);
+            }
+
+            &:nth-of-type(3) {
+                background-image: url(../img/depilation.jpg);
+            }
+
+            &:last-of-type {               
+                background-image: url(../img/face.jpg);            
+            }
+        }
+
+        .hairdressing-services__text {
+            display: block;            
+            font-size: 14px;
+            color: @brown;
+            padding-bottom: 30px;
+            padding-left: 10px;
+            padding-top: 355px;
+        }
+    }
+}

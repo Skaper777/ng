@@ -1,0 +1,53 @@
+.short-services {
+    margin-bottom: 60px;
+
+    .short-services__title {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .short-services__link {
+        text-decoration: none;            
+    }
+
+    .short-services__item {
+        width: 270px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        background-image: url(../img/hairdress.jpg);
+        background-repeat: no-repeat;
+        border: 1px solid #EFC99F;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px -5px;
+        
+        &:hover {
+            background-color: #FDF8F3;
+        }
+
+        &:nth-of-type(2) {
+            background-image: url(../img/nail.jpg);
+        }
+
+        &:nth-of-type(3) {
+            background-image: url(../img/brows.jpg);
+        }
+
+        &:nth-of-type(4) {
+            background-image: url(../img/depilation.jpg);
+        }
+
+        &:last-of-type {               
+            background-image: url(../img/face.jpg);            
+        }
+    }
+
+    .short-services__text {
+        display: block;            
+        font-size: 14px;
+        color: @brown;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-top: 355px;
+    }
+}

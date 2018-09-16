@@ -1673,3 +1673,148 @@ template {
   padding-left: 10px;
   padding-top: 355px;
 }
+.hairdressing {
+  padding: 0 15px;
+  margin-top: 40px;
+}
+.hairdressing .hairdressing__textblock {
+  font-size: 14px;
+}
+.hairdressing .hairdressing__textblock span {
+  display: block;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.hairdressing .hairdressing-length .hairdressing-length__item {
+  background-image: url(../img/shortcut.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 7px -1px;
+}
+.hairdressing .hairdressing-length .hairdressing-length__item:nth-of-type(2) {
+  background-image: url(../img/middle.jpg);
+}
+.hairdressing .hairdressing-length .hairdressing-length__item:last-of-type {
+  background-image: url(../img/long.jpg);
+}
+.hairdressing .hairdressing-length .hairdressing-length__item a {
+  text-decoration: none;
+}
+.hairdressing .hairdressing-length .hairdressing-length__item span {
+  display: block;
+  color: white;
+  padding-top: 328px;
+  padding-left: 20px;
+}
+.hairdressing .hairdressing-services {
+  margin-bottom: 60px;
+}
+.hairdressing .hairdressing-services .hairdressing-services__title {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+.hairdressing .hairdressing-services .hairdressing-services__link {
+  text-decoration: none;
+}
+.hairdressing .hairdressing-services .hairdressing-services__item {
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-image: url(../img/nail.jpg);
+  background-repeat: no-repeat;
+  border: 1px solid #EFC99F;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px -5px;
+}
+.hairdressing .hairdressing-services .hairdressing-services__item:hover {
+  background-color: #FDF8F3;
+}
+.hairdressing .hairdressing-services .hairdressing-services__item:nth-of-type(2) {
+  background-image: url(../img/brows.jpg);
+}
+.hairdressing .hairdressing-services .hairdressing-services__item:nth-of-type(3) {
+  background-image: url(../img/depilation.jpg);
+}
+.hairdressing .hairdressing-services .hairdressing-services__item:last-of-type {
+  background-image: url(../img/face.jpg);
+}
+.hairdressing .hairdressing-services .hairdressing-services__text {
+  display: block;
+  font-size: 14px;
+  color: #65483F;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-top: 355px;
+}
+.other-length {
+  padding: 0 15px;
+}
+.other-length div {
+  background-image: url(../../img/middle.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px -2px;
+}
+.other-length div:last-of-type {
+  background-image: url(../../img/long.jpg);
+}
+.other-length div a {
+  text-decoration: none;
+}
+.other-length div span {
+  display: block;
+  padding-top: 328px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: #FFE0BE;
+}
+.short-services {
+  margin-bottom: 60px;
+}
+.short-services .short-services__title {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+.short-services .short-services__link {
+  text-decoration: none;
+}
+.short-services .short-services__item {
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-image: url(../img/hairdress.jpg);
+  background-repeat: no-repeat;
+  border: 1px solid #EFC99F;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px -5px;
+}
+.short-services .short-services__item:hover {
+  background-color: #FDF8F3;
+}
+.short-services .short-services__item:nth-of-type(2) {
+  background-image: url(../img/nail.jpg);
+}
+.short-services .short-services__item:nth-of-type(3) {
+  background-image: url(../img/brows.jpg);
+}
+.short-services .short-services__item:nth-of-type(4) {
+  background-image: url(../img/depilation.jpg);
+}
+.short-services .short-services__item:last-of-type {
+  background-image: url(../img/face.jpg);
+}
+.short-services .short-services__text {
+  display: block;
+  font-size: 14px;
+  color: #65483F;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-top: 355px;
+}
