@@ -1,0 +1,63 @@
+.about {
+    padding: 0 15px;
+    margin-top: 50px;
+
+    .about__title {
+        font-weight: 300;
+        color: @brown;
+        padding-left: 10px;
+    }
+
+    .about__list {
+        .about__list-item {
+            margin-bottom: 30px;
+            background-image: url(../img/about-works.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%; 
+            border-radius: 7px;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.04);
+            }
+
+            &:nth-of-type(2) {
+                background-image: url(../img/about-int.jpg);
+            }
+
+            &:last-of-type {
+                background-image: url(../img/about-mast.jpg);
+            }
+
+            .about__list-link {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                text-decoration: none;
+                padding-top: 355px;
+                box-shadow: 0 5px 20px -10px;
+
+                .about__img {
+                    width: 288px;
+                    height: 370px;
+                }
+
+                .about__list-label {
+                    display: block;
+                    padding: 20px 0;
+                    margin-top: 10px;
+                    color: @brown;                    
+                    margin-left: 20px;
+                }   
+
+                .about__icon {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    padding-top: 22px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

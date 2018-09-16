@@ -22,16 +22,27 @@
 
     .page-header__button-subscribe {
         position: relative;
-        margin-bottom: 37px;       
-        border: none;
-        background: none;
+        margin-bottom: 37px;
+        border: none;        
+        border-radius: 20px;
+        width: 189px;
+        height: 30px;
+        background: linear-gradient(to right, rgba(178, 133, 83, 1), rgba(66, 47, 41, 1));
         cursor: pointer;
+
+        &:hover {
+            background: linear-gradient(to right, rgba(122, 89, 58, 1), rgba(36, 15, 0, 1));
+        }
+
+        img {
+            left: -11px;
+            top: -10px;
+            position: absolute;
+        } 
         
         span {
-            position: absolute;
-            white-space: nowrap;
-            top: 18px;
-            left: 32px;
+            display: block;
+            white-space: nowrap;            
             font-size: 13px;           
             color: #FFE0BE;
         }
@@ -39,16 +50,30 @@
 
     .page-header__button-callback {
         position: relative;
-        margin-bottom: 13px;
+        margin-bottom: 37px;        
+        border-radius: 20px;
+        width: 189px;
+        height: 30px;
         border: none;
         background: none;
         cursor: pointer;
 
-        span {
+        &:hover {
+            background: #B28553;
+
+            span {
+                color: white;
+            }            
+        }
+
+        img {
+            left: -11px;
+            top: -10px;
             position: absolute;
-            white-space: nowrap;
-            top: 18px;
-            left: 57px;
+        } 
+
+        span {            
+            white-space: nowrap;            
             font-size: 13px;            
             color: @brown;
         }
@@ -64,7 +89,7 @@
     }
 
     .page-header__tel {
-        padding-bottom: 25px;
+        padding-bottom: 25px;        
 
         .page-header__tel-number {
             display: flex;            
@@ -74,7 +99,15 @@
             margin: 0 auto;
             padding: 2px;
             border: 1px solid #B59979;
-            border-radius: 20px;            
+            border-radius: 20px;
+            
+            &:hover {
+                background: #B59979;
+
+                span {
+                    color: white;
+                }
+            }
 
             span {
                 margin-left: 10px;                

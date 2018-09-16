@@ -3,52 +3,45 @@
 
     .catalog__item {
         position: relative;
-        background-image: url(../img/men.jpg);        
+        background-image: url(../img/men-m.jpg);        
         background-repeat: no-repeat;
-        background-position-y: 22%;
+        background-position-y: -1px;
+        background-color: #FFF7EE;   
         margin-bottom: 60px;
         box-shadow: 0 15px 30px -20px;
+        border: 1px solid #B28553;
+        border-radius: 7px;
         
         &:nth-of-type(2) {
-            background-image: url(../img/women.jpg);
-            background-position-y: 21%;           
+            background-image: url(../img/women-m.jpg);
+                   
         }
 
         &:last-of-type {
-            background-image: url(../img/children.jpg);
+            background-image: url(../img/children-m.jpg);
             margin-bottom: 28px;
-            background-position-y: 20%; 
+           
+        }
+
+        .catalog__item-design {
+            position: absolute;
+            top: -26px;
+            left: 154px;
         }
 
         .catalog__item-link {
             display: block;
-            height: 440px;            
+            height: 420px;
+            text-decoration: none;            
         }
 
-        span {
-            position: absolute;
+        span {            
             display: block;
             text-align: center;            
             width: 288px;
-            padding-top: 17px;
-            padding-bottom: 15px;
-            top: 380px;
-            left: 1px;
-            color: @brown;
-            background-color: #FFF7EE;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            padding-top: 377px;            
+            color: @brown;                     
             font-size: 23px;
-        }
-    }
-
-    .catalog__info {
-        text-align: center;
-        margin-bottom: 6px;
-
-        span {
-            color: #B59979;
-            font-size: 18px;
         }
     }
 }

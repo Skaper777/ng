@@ -1,0 +1,94 @@
+.women {
+    position: relative;
+    color: @brown;
+    padding: 0 15px;
+    margin-top: 80px;       
+
+    .women__banner {
+        background-image: url(../img/women.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid #B28553;
+        border-radius: 10px;
+        margin-bottom: 50px;  
+
+        .women__banner-title {
+            font-weight: 300;
+            margin: 0;
+            margin-top: 300px;
+            padding-left: 10px;
+            color: #FFE0BE;            
+        }
+
+        .women__banner-text {
+            display: block;
+            font-size: 12px;
+            line-height: 20px;
+            color: #FFE0BE;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .women__banner-design {
+            position: absolute;
+            top: -25px;
+            left: 168px;
+        }
+    }
+
+    .women-services {
+        margin-bottom: 60px;
+
+        .women-services__title {
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .women-services__link {
+            text-decoration: none;            
+        }
+
+        .women-services__item {
+            width: 270px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            background-image: url(../img/hairdress.jpg);
+            background-repeat: no-repeat;
+            border: 1px solid #EFC99F;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px -5px;
+            
+            &:hover {
+                background-color: #FDF8F3;
+            }
+
+            &:nth-of-type(2) {
+                background-image: url(../img/nail.jpg);
+            }
+
+            &:nth-of-type(3) {
+                background-image: url(../img/brows.jpg);
+            }
+
+            &:nth-of-type(4) {
+                background-image: url(../img/depilation.jpg);
+            }
+
+            &:last-of-type {               
+                background-image: url(../img/face.jpg);            
+            }
+        }
+
+        .women-services__text {
+            display: block;            
+            font-size: 14px;
+            color: @brown;
+            padding-bottom: 30px;
+            padding-left: 10px;
+            padding-top: 355px;
+        }
+    }
+}

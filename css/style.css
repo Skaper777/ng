@@ -391,6 +391,14 @@ template {
 [hidden] {
   display: none;
 }
+.info {
+  text-align: center;
+  margin-bottom: 6px;
+}
+.info span {
+  color: #B59979;
+  font-size: 18px;
+}
 .page {
   width: 320px;
   margin: 0 auto;
@@ -424,29 +432,49 @@ template {
   position: relative;
   margin-bottom: 37px;
   border: none;
-  background: none;
+  border-radius: 20px;
+  width: 189px;
+  height: 30px;
+  background: linear-gradient(to right, #b28553, #422f29);
   cursor: pointer;
 }
-.page-header .page-header__button-subscribe span {
+.page-header .page-header__button-subscribe:hover {
+  background: linear-gradient(to right, #7a593a, #240f00);
+}
+.page-header .page-header__button-subscribe img {
+  left: -11px;
+  top: -10px;
   position: absolute;
+}
+.page-header .page-header__button-subscribe span {
+  display: block;
   white-space: nowrap;
-  top: 18px;
-  left: 32px;
   font-size: 13px;
   color: #FFE0BE;
 }
 .page-header .page-header__button-callback {
   position: relative;
-  margin-bottom: 13px;
+  margin-bottom: 37px;
+  border-radius: 20px;
+  width: 189px;
+  height: 30px;
   border: none;
   background: none;
   cursor: pointer;
 }
-.page-header .page-header__button-callback span {
+.page-header .page-header__button-callback:hover {
+  background: #B28553;
+}
+.page-header .page-header__button-callback:hover span {
+  color: white;
+}
+.page-header .page-header__button-callback img {
+  left: -11px;
+  top: -10px;
   position: absolute;
+}
+.page-header .page-header__button-callback span {
   white-space: nowrap;
-  top: 18px;
-  left: 57px;
   font-size: 13px;
   color: #65483F;
 }
@@ -470,6 +498,12 @@ template {
   border: 1px solid #B59979;
   border-radius: 20px;
 }
+.page-header .page-header__tel .page-header__tel-number:hover {
+  background: #B59979;
+}
+.page-header .page-header__tel .page-header__tel-number:hover span {
+  color: white;
+}
 .page-header .page-header__tel .page-header__tel-number span {
   margin-left: 10px;
   color: #7A593A;
@@ -481,9 +515,23 @@ template {
   justify-content: space-between;
 }
 .nav .nav__metro {
-  display: flex;
+  width: 80px;
   height: 12px;
   margin-top: 45px;
+  padding: 2px;
+  border: 1px solid #FF8700;
+  border-radius: 15px;
+}
+.nav .nav__metro:hover {
+  background: #FF8700;
+}
+.nav .nav__metro:hover .nav__metro-text {
+  color: white;
+}
+.nav .nav__metro .nav__metro-link {
+  display: flex;
+  justify-content: start;
+  text-decoration: none;
 }
 .nav .nav__metro .nav__metro-text {
   display: block;
@@ -492,7 +540,7 @@ template {
   color: #FF8700;
 }
 .nav .nav__logo {
-  margin-right: 30px;
+  margin-right: 45px;
   background: #65483F;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -586,7 +634,7 @@ template {
 .nav .nav__menu-mobile .nav__menu-mobile-item .nav__menu-mobile-link:hover {
   box-shadow: 0 5px 15px -7px;
 }
-.nav .nav__menu {
+.menu {
   display: none;
 }
 .slider {
@@ -708,47 +756,39 @@ template {
 }
 .catalog .catalog__item {
   position: relative;
-  background-image: url(../img/men.jpg);
+  background-image: url(../img/men-m.jpg);
   background-repeat: no-repeat;
-  background-position-y: 22%;
+  background-position-y: -1px;
+  background-color: #FFF7EE;
   margin-bottom: 60px;
   box-shadow: 0 15px 30px -20px;
+  border: 1px solid #B28553;
+  border-radius: 7px;
 }
 .catalog .catalog__item:nth-of-type(2) {
-  background-image: url(../img/women.jpg);
-  background-position-y: 21%;
+  background-image: url(../img/women-m.jpg);
 }
 .catalog .catalog__item:last-of-type {
-  background-image: url(../img/children.jpg);
+  background-image: url(../img/children-m.jpg);
   margin-bottom: 28px;
-  background-position-y: 20%;
+}
+.catalog .catalog__item .catalog__item-design {
+  position: absolute;
+  top: -26px;
+  left: 154px;
 }
 .catalog .catalog__item .catalog__item-link {
   display: block;
-  height: 440px;
+  height: 420px;
+  text-decoration: none;
 }
 .catalog .catalog__item span {
-  position: absolute;
   display: block;
   text-align: center;
   width: 288px;
-  padding-top: 17px;
-  padding-bottom: 15px;
-  top: 380px;
-  left: 1px;
+  padding-top: 377px;
   color: #65483F;
-  background-color: #FFF7EE;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   font-size: 23px;
-}
-.catalog .catalog__info {
-  text-align: center;
-  margin-bottom: 6px;
-}
-.catalog .catalog__info span {
-  color: #B59979;
-  font-size: 18px;
 }
 .page-footer {
   background-color: #FFEDD6;
@@ -826,4 +866,343 @@ template {
 .masters .masters__info span {
   color: #B59979;
   font-size: 18px;
+}
+.about {
+  padding: 0 15px;
+  margin-top: 50px;
+}
+.about .about__title {
+  font-weight: 300;
+  color: #65483F;
+  padding-left: 10px;
+}
+.about .about__list .about__list-item {
+  margin-bottom: 30px;
+  background-image: url(../img/about-works.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+.about .about__list .about__list-item:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+.about .about__list .about__list-item:nth-of-type(2) {
+  background-image: url(../img/about-int.jpg);
+}
+.about .about__list .about__list-item:last-of-type {
+  background-image: url(../img/about-mast.jpg);
+}
+.about .about__list .about__list-item .about__list-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-top: 355px;
+  box-shadow: 0 5px 20px -10px;
+}
+.about .about__list .about__list-item .about__list-link .about__img {
+  width: 288px;
+  height: 370px;
+}
+.about .about__list .about__list-item .about__list-link .about__list-label {
+  display: block;
+  padding: 20px 0;
+  margin-top: 10px;
+  color: #65483F;
+  margin-left: 20px;
+}
+.about .about__list .about__list-item .about__list-link .about__icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding-top: 22px;
+  margin-right: 20px;
+}
+.men {
+  position: relative;
+  color: #65483F;
+  padding: 0 15px;
+  margin-top: 80px;
+}
+.men .men__banner {
+  background-image: url(../img/men.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #B28553;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.men .men__banner .men__banner-title {
+  font-weight: 300;
+  margin: 0;
+  margin-top: 300px;
+  padding-left: 10px;
+  color: #FFE0BE;
+}
+.men .men__banner .men__banner-text {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFE0BE;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.men .men__banner .men__banner-design {
+  position: absolute;
+  top: -25px;
+  left: 168px;
+}
+.men .men-services {
+  margin-bottom: 60px;
+}
+.men .men-services .men-services__title {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+}
+.men .men-services .men-services__link {
+  text-decoration: none;
+}
+.men .men-services .men-services__item {
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-image: url(../img/menCut.jpg);
+  background-repeat: no-repeat;
+  border: 1px solid #EFC99F;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px -5px;
+}
+.men .men-services .men-services__item:hover {
+  background-color: #FDF8F3;
+}
+.men .men-services .men-services__item:nth-of-type(2) {
+  background-image: url(../img/beard.jpg);
+}
+.men .men-services .men-services__item:nth-of-type(3) {
+  background-image: url(../img/menNail.jpg);
+}
+.men .men-services .men-services__item:nth-of-type(4) {
+  background-image: url(../img/menFace.jpg);
+}
+.men .men-services .men-services__item:last-of-type {
+  background-image: url(../img/menBody.jpg);
+}
+.men .men-services .men-services__text {
+  display: block;
+  font-size: 14px;
+  color: #65483F;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-top: 355px;
+}
+.anothers .anothers__title {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+.anothers .anothers__item {
+  position: relative;
+  margin-bottom: 60px;
+  background-image: url(../img/women.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #FFF7EE;
+  border: 1px solid #B28553;
+  border-radius: 7px;
+}
+.anothers .anothers__item:hover {
+  background-color: #FDF8F3;
+}
+.anothers .anothers__item:last-of-type {
+  background-image: url(../img/children.jpg);
+}
+.anothers .anothers__item .anothers__item-link {
+  text-decoration: none;
+}
+.anothers .anothers__item .anothers__item-design {
+  position: absolute;
+  top: -26px;
+  left: 154px;
+}
+.anothers .anothers__item .anothers__item-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  padding-top: 390px;
+  margin-bottom: 25px;
+}
+.anothers .anothers__item .anothers__item-list {
+  list-style: disc;
+  padding-left: 50px;
+  margin-bottom: 20px;
+  color: #65483F;
+}
+.anothers .anothers__item .anothers__item-list li {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.women {
+  position: relative;
+  color: #65483F;
+  padding: 0 15px;
+  margin-top: 80px;
+}
+.women .women__banner {
+  background-image: url(../img/women.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #B28553;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.women .women__banner .women__banner-title {
+  font-weight: 300;
+  margin: 0;
+  margin-top: 300px;
+  padding-left: 10px;
+  color: #FFE0BE;
+}
+.women .women__banner .women__banner-text {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFE0BE;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.women .women__banner .women__banner-design {
+  position: absolute;
+  top: -25px;
+  left: 168px;
+}
+.women .women-services {
+  margin-bottom: 60px;
+}
+.women .women-services .women-services__title {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+.women .women-services .women-services__link {
+  text-decoration: none;
+}
+.women .women-services .women-services__item {
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-image: url(../img/hairdress.jpg);
+  background-repeat: no-repeat;
+  border: 1px solid #EFC99F;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px -5px;
+}
+.women .women-services .women-services__item:hover {
+  background-color: #FDF8F3;
+}
+.women .women-services .women-services__item:nth-of-type(2) {
+  background-image: url(../img/nail.jpg);
+}
+.women .women-services .women-services__item:nth-of-type(3) {
+  background-image: url(../img/brows.jpg);
+}
+.women .women-services .women-services__item:nth-of-type(4) {
+  background-image: url(../img/depilation.jpg);
+}
+.women .women-services .women-services__item:last-of-type {
+  background-image: url(../img/face.jpg);
+}
+.women .women-services .women-services__text {
+  display: block;
+  font-size: 14px;
+  color: #65483F;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-top: 355px;
+}
+.anothers-women .anothers-women__title {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+.anothers-women .anothers-women__item {
+  position: relative;
+  margin-bottom: 60px;
+  background-image: url(../img/men.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #FFF7EE;
+  border: 1px solid #B28553;
+  border-radius: 7px;
+}
+.anothers-women .anothers-women__item:hover {
+  background-color: #FDF8F3;
+}
+.anothers-women .anothers-women__item:last-of-type {
+  background-image: url(../img/children.jpg);
+}
+.anothers-women .anothers-women__item .anothers-women__item-link {
+  text-decoration: none;
+}
+.anothers-women .anothers-women__item .anothers-women__item-design {
+  position: absolute;
+  top: -26px;
+  left: 154px;
+}
+.anothers-women .anothers-women__item .anothers-women__item-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  padding-top: 390px;
+  margin-bottom: 25px;
+}
+.anothers-women .anothers-women__item .anothers-women__item-list {
+  list-style: disc;
+  padding-left: 50px;
+  margin-bottom: 20px;
+  color: #65483F;
+}
+.anothers-women .anothers-women__item .anothers-women__item-list li {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.contacts {
+  color: #65483F;
+}
+.contacts .contacts__title {
+  padding-left: 15px;
+  font-weight: 300;
+}
+.contacts .contacts__map {
+  position: relative;
+  background: url(../img/map.jpg) no-repeat 50%;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.contacts .contacts__map .contacts__info {
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFE0BE;
+  font-size: 11px;
+  width: 100px;
+  padding: 5px;
+  margin-left: 15px;
+}
+.contacts .contacts__map .contacts__info h3 {
+  font-weight: 300;
+}
+.contacts .contacts__map .contacts__pin {
+  position: absolute;
+  top: 170px;
+  left: 170px;
+}
+.contacts .contacts__map .contacts__pin .contacts__pin-icon {
+  width: 20px;
 }

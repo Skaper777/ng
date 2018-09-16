@@ -1,0 +1,94 @@
+.men {
+    position: relative;
+    color: @brown;
+    padding: 0 15px;
+    margin-top: 80px;       
+
+    .men__banner {
+        background-image: url(../img/men.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid #B28553;
+        border-radius: 10px;
+        margin-bottom: 50px;  
+
+        .men__banner-title {
+            font-weight: 300;
+            margin: 0;
+            margin-top: 300px;
+            padding-left: 10px;
+            color: #FFE0BE;            
+        }
+
+        .men__banner-text {
+            display: block;
+            font-size: 12px;
+            line-height: 20px;
+            color: #FFE0BE;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .men__banner-design {
+            position: absolute;
+            top: -25px;
+            left: 168px;
+        }
+    }
+
+    .men-services {
+        margin-bottom: 60px;
+
+        .men-services__title {
+            font-size: 18px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .men-services__link {
+            text-decoration: none;            
+        }
+
+        .men-services__item {
+            width: 270px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            background-image: url(../img/menCut.jpg);
+            background-repeat: no-repeat;
+            border: 1px solid #EFC99F;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px -5px;
+            
+            &:hover {
+                background-color: #FDF8F3;
+            }
+
+            &:nth-of-type(2) {
+                background-image: url(../img/beard.jpg);
+            }
+
+            &:nth-of-type(3) {
+                background-image: url(../img/menNail.jpg);
+            }
+
+            &:nth-of-type(4) {
+                background-image: url(../img/menFace.jpg);
+            }
+
+            &:last-of-type {               
+                background-image: url(../img/menBody.jpg);            
+            }
+        }
+
+        .men-services__text {
+            display: block;            
+            font-size: 14px;
+            color: @brown;
+            padding-bottom: 30px;
+            padding-left: 10px;
+            padding-top: 355px;
+        }
+    }
+}
