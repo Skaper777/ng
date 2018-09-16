@@ -1,0 +1,62 @@
+.works {
+    padding: 0 15px;
+    margin-top: 50px; 
+
+    .works__textblock {
+        span {
+            display: block;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .works__list {
+        .works__item {
+            background-image: url(../img/highlights.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 7px 7px 10px -5px;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            &:nth-of-type(2) {
+                background-image: url(../img/manCut.jpg); 
+            }
+
+            &:nth-of-type(3) {
+                background-image: url(../img/evening.jpg); 
+            }
+
+            &:nth-of-type(4) {
+                background-image: url(../img/desnail.jpg); 
+            }
+
+            &:nth-of-type(5) {
+                background-image: url(../img/shortcut.jpg); 
+            }
+
+            &:last-of-type {
+                background-image: url(../img/plus.jpg); 
+            }
+
+            .works__item-link {
+                display: block;
+                text-decoration: none;
+                color: #FFE0BE;                
+
+                span {
+                    display: block;
+                    padding-top: 330px;
+                    padding-left: 20px;
+                    padding-bottom: 16px;
+                }
+            }
+        }
+    }
+}

@@ -404,6 +404,12 @@ template {
   margin: 0 auto;
   font-family: "Roboto-slab", "Arial", sans-serif;
   border: 1px solid;
+  color: #65483F;
+}
+.page h3,
+.page h2,
+.page h4 {
+  font-weight: 300;
 }
 .page uL {
   list-style: none;
@@ -856,16 +862,88 @@ template {
 .page-footer .page-footer__ad .page-footer__ad-text .page-footer__ad-link {
   color: #D82F2D;
 }
-.masters .masters__list-item .masters__list-link .masters__list-img {
-  width: 288px;
+.masters {
+  padding: 0 15px;
 }
-.masters .masters__info {
-  text-align: center;
-  margin-bottom: 6px;
+.masters .masters__title {
+  font-weight: 300;
+  color: #65483F;
 }
-.masters .masters__info span {
-  color: #B59979;
-  font-size: 18px;
+.masters .masters__list-item {
+  background-image: url(../img/tatiana.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.masters .masters__list-item:hover {
+  background-color: #FFF7EE;
+  opacity: 0.5;
+}
+.masters .masters__list-item:nth-of-type(2) {
+  background-image: url(../img/fedr.jpg);
+}
+.masters .masters__list-item:nth-of-type(3) {
+  background-image: url(../img/alex.jpg);
+}
+.masters .masters__list-item:nth-of-type(4) {
+  background-image: url(../img/ed.jpg);
+}
+.masters .masters__list-item:nth-of-type(5) {
+  background-image: url(../img/victoria.jpg);
+}
+.masters .masters__list-item:last-of-type {
+  background-image: url(../img/gulnara.jpg);
+}
+.masters .masters__list-item .masters__list-link {
+  display: block;
+  padding-top: 390px;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px -5px;
+  color: #65483F;
+  border-radius: 10px;
+}
+.masters .masters__list-item .masters__list-name {
+  display: block;
+  font-size: 14px;
+  color: #65483F;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.other-categories {
+  color: #65483F;
+}
+.other-categories .other-categories__item {
+  transition: 0.3s;
+}
+.other-categories .other-categories__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.other-categories .other-categories__title {
+  font-weight: 300;
+  color: #65483F;
+  margin-top: 50px;
+}
+.other-categories .other-categories__link {
+  display: block;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px -5px;
+  color: #65483F;
+  border-radius: 10px;
+}
+.other-categories .other-categories__label {
+  display: block;
+  margin-top: 70px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.other-categories .other-categories__img {
+  display: block;
+  width: 150px;
+  margin-left: 70px;
+  padding-top: 50px;
 }
 .about {
   padding: 0 15px;
@@ -1205,4 +1283,53 @@ template {
 }
 .contacts .contacts__map .contacts__pin .contacts__pin-icon {
   width: 20px;
+}
+.works {
+  padding: 0 15px;
+  margin-top: 50px;
+}
+.works .works__textblock span {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.works .works__list .works__item {
+  background-image: url(../img/highlights.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 10px -5px;
+  transition: 0.3s;
+}
+.works .works__list .works__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.works .works__list .works__item:nth-of-type(2) {
+  background-image: url(../img/manCut.jpg);
+}
+.works .works__list .works__item:nth-of-type(3) {
+  background-image: url(../img/evening.jpg);
+}
+.works .works__list .works__item:nth-of-type(4) {
+  background-image: url(../img/desnail.jpg);
+}
+.works .works__list .works__item:nth-of-type(5) {
+  background-image: url(../img/shortcut.jpg);
+}
+.works .works__list .works__item:last-of-type {
+  background-image: url(../img/plus.jpg);
+}
+.works .works__list .works__item .works__item-link {
+  display: block;
+  text-decoration: none;
+  color: #FFE0BE;
+}
+.works .works__list .works__item .works__item-link span {
+  display: block;
+  padding-top: 330px;
+  padding-left: 20px;
+  padding-bottom: 16px;
 }

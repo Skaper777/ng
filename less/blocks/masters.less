@@ -1,19 +1,59 @@
 .masters {
-    .masters__list-item {
-        .masters__list-link {
-            .masters__list-img {
-                width: 288px;
-            }
-        }
+    padding: 0 15px;
+
+    .masters__title {
+        font-weight: 300;
+        color: @brown;
     }
 
-    .masters__info {
-        text-align: center;
-        margin-bottom: 6px;
+    .masters__list-item {
+        background-image: url(../img/tatiana.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-bottom: 30px;
+        transition: 0.3s;
 
-        span {
-            color: #B59979;
-            font-size: 18px;
+        &:hover {
+            background-color: #FFF7EE;
+            opacity: 0.5; 
+        }
+        
+
+        &:nth-of-type(2) {
+            background-image: url(../img/fedr.jpg);
+        }
+
+        &:nth-of-type(3) {
+            background-image: url(../img/alex.jpg);
+        }
+
+        &:nth-of-type(4) {
+            background-image: url(../img/ed.jpg);
+        }
+
+        &:nth-of-type(5) {
+            background-image: url(../img/victoria.jpg);
+        }
+
+        &:last-of-type {
+            background-image: url(../img/gulnara.jpg);
+        }
+
+        .masters__list-link {
+            display: block;
+            padding-top: 390px;
+            text-decoration: none;
+            box-shadow: 5px 5px 10px -5px;
+            color: @brown;
+            border-radius: 10px;
+        }
+
+        .masters__list-name {
+            display: block;            
+            font-size: 14px;
+            color: @brown;
+            padding-bottom: 20px;
+            padding-left: 20px;                     
         }
     }
 }
