@@ -400,6 +400,7 @@ template {
   font-size: 18px;
 }
 .page {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   font-family: "Roboto-slab", "Arial", sans-serif;
@@ -419,7 +420,9 @@ template {
 .page-header {
   position: relative;
   text-align: center;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: white;
   box-shadow: 0px 10px 55px -20px;
   z-index: 5;
 }
@@ -707,9 +710,13 @@ template {
   position: relative;
   display: block;
   background: none;
+  height: 20px;
   border: none;
   padding: 0;
   cursor: pointer;
+}
+.slider .slider__list .slider__slide:last-of-type .slider__slide-button:hover .black {
+  display: block;
 }
 .slider .slider__list .slider__slide:last-of-type .slider__slide-button span {
   position: absolute;
@@ -717,8 +724,22 @@ template {
   left: 18px;
   font-size: 8px;
   color: #FFE0BE;
+  z-index: 5;
+}
+.slider .slider__list .slider__slide:last-of-type .slider__slide-button .black {
+  display: none;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 87px;
+  height: 17px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 6;
 }
 .slider .slider__list .slider__slide:last-of-type .slider__slide-button .slide__slide-red-but {
+  display: block;
+  position: relative;
   width: 100px;
 }
 .slider .slider__list .slider__slide:last-of-type .slider__slide-design {
@@ -1332,4 +1353,323 @@ template {
   padding-top: 330px;
   padding-left: 20px;
   padding-bottom: 16px;
+}
+.master {
+  padding: 0 15px;
+  margin-top: 40px;
+}
+.master .master__title {
+  font-size: 20px;
+}
+.master .master__textblock {
+  font-size: 12px;
+}
+.master .master__textblock span {
+  display: block;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.master .master__image img {
+  width: 290px;
+}
+.master .master__button {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.master .master__button:hover .black {
+  display: block;
+}
+.master .master__button .black {
+  display: none;
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  width: 185px;
+  height: 35px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+.master .master__button span {
+  position: absolute;
+  top: 22px;
+  left: 37px;
+  font-size: 14px;
+  color: #FFE0BE;
+  z-index: 2;
+}
+.others-masters {
+  padding: 0 15px;
+}
+.others-masters .others-masters__title {
+  font-weight: 300;
+  color: #65483F;
+}
+.others-masters .others-masters__item {
+  background-image: url(../img/tatiana.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.others-masters .others-masters__item:hover {
+  background-color: #FFF7EE;
+  opacity: 0.5;
+}
+.others-masters .others-masters__item:nth-of-type(2) {
+  background-image: url(../img/fedr.jpg);
+}
+.others-masters .others-masters__item:nth-of-type(3) {
+  background-image: url(../img/alex.jpg);
+}
+.others-masters .others-masters__item:nth-of-type(4) {
+  background-image: url(../img/ed.jpg);
+}
+.others-masters .others-masters__item:nth-of-type(5) {
+  background-image: url(../img/victoria.jpg);
+}
+.others-masters .others-masters__item:last-of-type {
+  background-image: url(../img/gulnara.jpg);
+}
+.others-masters .others-masters__item .others-masters__link {
+  display: block;
+  padding-top: 390px;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px -5px;
+  color: #65483F;
+  border-radius: 10px;
+}
+.others-masters .others-masters__item .others-masters__name {
+  display: block;
+  font-size: 14px;
+  color: #65483F;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.popup .master__form {
+  width: 290px;
+  position: fixed;
+  top: 30%;
+  width: 100%;
+}
+.popup .master__form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.popup .master__form fieldset input {
+  display: block;
+  margin: 0;
+}
+.highlights {
+  padding: 0 15px;
+  margin-top: 40px;
+}
+.highlights .highlights-master img {
+  width: 290px;
+}
+.highlights .highlights-master p {
+  margin-bottom: 40px;
+}
+.highlights .highlights-master .highlights-master__quest {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 11px;
+}
+.highlights .highlights-master .highlights-master__answer {
+  display: block;
+}
+.highlights .highlights-prepare p {
+  font-size: 11px;
+}
+.highlights .highlights-prepare p span {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 17px;
+}
+.highlights .highlights-prepare img {
+  width: 290px;
+}
+.highlights .highlights-paint p {
+  font-size: 11px;
+}
+.highlights .highlights-paint p span {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 17px;
+}
+.highlights .highlights-result {
+  margin-bottom: 60px;
+}
+.highlights .highlights-result img {
+  width: 290px;
+}
+.other-works .other-works__item {
+  background-image: url(../img/highlights.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 10px -5px;
+  transition: 0.3s;
+}
+.other-works .other-works__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.other-works .other-works__item:nth-of-type(2) {
+  background-image: url(../img/manCut.jpg);
+}
+.other-works .other-works__item:nth-of-type(3) {
+  background-image: url(../img/evening.jpg);
+}
+.other-works .other-works__item:nth-of-type(4) {
+  background-image: url(../img/desnail.jpg);
+}
+.other-works .other-works__item:nth-of-type(5) {
+  background-image: url(../img/shortcut.jpg);
+}
+.other-works .other-works__item:last-of-type {
+  background-image: url(../img/plus.jpg);
+}
+.other-works .other-works__item .other-works__item-link {
+  display: block;
+  text-decoration: none;
+  color: #FFE0BE;
+}
+.other-works .other-works__item .other-works__item-link span {
+  display: block;
+  padding-top: 330px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+}
+.haircut {
+  margin-top: 40px;
+}
+.haircut .haircut__img {
+  padding: 0 15px;
+  width: 290px;
+}
+.haircut h3 {
+  padding: 0 15px;
+}
+.haircut p {
+  padding: 0 15px;
+  font-size: 12px;
+}
+.haircut p span {
+  display: block;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.haircut form {
+  padding: 0 15px;
+}
+.haircut form input {
+  position: absolute;
+  opacity: 0;
+}
+.haircut form input:checked + span {
+  background: #65483F;
+  color: white;
+}
+.haircut form span {
+  display: block;
+  padding: 8px;
+  font-size: 12px;
+  box-shadow: 3px 3px 7px -2px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.haircut form span:hover {
+  background: #65483F;
+  color: white;
+}
+.haircut form .haircut__button {
+  display: block;
+  margin: 0 auto;
+  margin-left: 52px;
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 37px;
+  border: none;
+  border-radius: 20px;
+  width: 190px;
+  height: 30px;
+  background: linear-gradient(to right, #b28553, #422f29);
+  cursor: pointer;
+}
+.haircut form .haircut__button:hover {
+  background: linear-gradient(to right, #7a593a, #240f00);
+}
+.haircut form .haircut__button img {
+  left: -10px;
+  top: -10px;
+  position: absolute;
+}
+.haircut form .haircut__button p {
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #FFE0BE;
+}
+.haircut .haircut-services {
+  margin-bottom: 60px;
+}
+.haircut .haircut-services .haircut-services__title {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+}
+.haircut .haircut-services .haircut-services__link {
+  text-decoration: none;
+}
+.haircut .haircut-services .haircut-services__item {
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-image: url(../img/beard.jpg);
+  background-repeat: no-repeat;
+  border: 1px solid #EFC99F;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px -5px;
+}
+.haircut .haircut-services .haircut-services__item:hover {
+  background-color: #FDF8F3;
+}
+.haircut .haircut-services .haircut-services__item:nth-of-type(2) {
+  background-image: url(../img/menNail.jpg);
+}
+.haircut .haircut-services .haircut-services__item:nth-of-type(3) {
+  background-image: url(../img/menFace.jpg);
+}
+.haircut .haircut-services .haircut-services__item:last-of-type {
+  background-image: url(../img/menBody.jpg);
+}
+.haircut .haircut-services .haircut-services__text {
+  display: block;
+  font-size: 14px;
+  color: #65483F;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-top: 355px;
 }

@@ -70,9 +70,14 @@
                     position: relative;
                     display: block;
                     background: none;
-                    border: none;
+                    height: 20px;                    
+                    border: none;                    
                     padding: 0;
                     cursor: pointer;
+                    
+                    &:hover .black {
+                        display: block;
+                    }
 
                     span {
                         position: absolute;
@@ -80,11 +85,26 @@
                         left: 18px;
                         font-size: 8px;
                         color: #FFE0BE;
+                        z-index: 5;
+                    }
+
+                    .black {
+                        display: none;
+                        position: absolute;
+                        left: 6px;
+                        top: 6px;
+                        width: 87px;
+                        height: 17px;
+                        border-radius: 15px;
+                        background: rgba(0, 0, 0, 0.5);
+                        z-index: 6;
                     }
 
                     .slide__slide-red-but {
-                        width: 100px;
-                    }
+                        display: block;
+                        position: relative;
+                        width: 100px;                        
+                    }                        
                 }
 
                 .slider__slide-design {
