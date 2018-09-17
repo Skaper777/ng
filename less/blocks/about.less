@@ -13,8 +13,7 @@
             margin-bottom: 30px;
             background-image: url(../img/about-works.jpg);
             background-repeat: no-repeat;
-            background-size: 100%; 
-            border-radius: 7px;
+            background-size: 100%;           
             transition: 0.3s;
 
             &:hover {
@@ -35,12 +34,8 @@
                 justify-content: space-between;
                 text-decoration: none;
                 padding-top: 355px;
+                border-radius: 7px;
                 box-shadow: 0 5px 20px -10px;
-
-                .about__img {
-                    width: 288px;
-                    height: 370px;
-                }
 
                 .about__list-label {
                     display: block;
@@ -57,6 +52,54 @@
                     padding-top: 22px;
                     margin-right: 20px;
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .about {
+        padding: 0;
+        width: 370px;
+        margin: 0 auto;
+
+        .about__title {
+           font-size: 35px;      
+        }
+
+        .about__list {
+            .about__list-item {
+                .about__list-link {
+                    padding-top: 460px;
+                    font-size: 30px;
+                    box-shadow: 4px 4px 10px -3px @brown; 
+
+                    .about__list-label {                       
+                        padding-bottom: 25px;                        
+                        color: @brown;                      
+                    }   
+    
+                    .about__icon {                        
+                        width: 50px;
+                        height: 50px;                        
+                    }
+                }
+            }
+        } 
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .about {
+        width: 1170px;        
+
+        .about__list {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 135px;
+
+            .about__list-item {
+                width: 370px;
             }
         }
     }

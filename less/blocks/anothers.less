@@ -1,13 +1,17 @@
 .anothers {
     .anothers__title {
         display: block;
-        font-size: 18px;
-        margin-bottom: 50px;
+        font-size: 18px;        
         font-weight: 300;
+        width: 270px;
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
 
     .anothers__item {
         position: relative;
+        width: 270px;
+        margin: 0 auto;
         margin-bottom: 60px;
         background-image: url(../img/women.jpg);
         background-repeat: no-repeat;
@@ -39,20 +43,67 @@
             margin: 0;
             font-size: 20px;
             font-weight: 300;
-            padding-top: 390px; 
+            padding-top: 360px; 
             margin-bottom: 25px;
         }
 
         .anothers__item-list {
-            list-style: disc;
+            list-style: disc;            
             padding-left: 50px;
             margin-bottom: 20px;
             color: @brown;
 
             li {
-                margin-bottom: 10px;
+                margin-bottom: 10px;                
                 font-size: 12px;
             }
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .anothers {
+        .anothers__title {
+            font-size: 30px;
+        }
+
+        .anothers__item {
+            width: 370px;
+
+            .anothers__item-title {                
+                font-size: 30px;                
+                padding-top: 490px;                 
+            }
+
+            .anothers__item-list {
+                     
+                padding-left: 50px;
+                margin-bottom: 20px;
+                color: @brown;
+    
+                li {
+                    margin-bottom: 20px;                
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .anothers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+
+        .anothers__title {
+            display: block;
+            width: 100%;
+        }
+
+        .anothers__item {
+            margin-bottom: 150px;
         }
     }
 }

@@ -50,19 +50,23 @@
                         </li>
                     </ul>                    
                 </nav>
-                <div class="page-header__time">
-                    <span>Ежедневно 8-22 по записи</span>                    
+                <div class="page-header__time-wrapper">
+                    <div class="page-header__time">
+                        <span>Ежедневно 8-22 по записи</span>                    
+                    </div>
+                    <button class="page-header__button-subscribe">
+                        <img src="img/button.png">                    
+                        <span>Записаться на процедуру</span>
+                    </button>
                 </div>
-                <button class="page-header__button-subscribe">
-                    <img src="img/button.png">                    
-                    <span>Записаться на процедуру</span>
-                </button>
-                <button class="page-header__button-callback">
-                    <img src="img/button.png">
-                    <span>Обратный звонок</span>
-                </button>
-                <div class="page-header__address">
-                    <span>ул. Новаторов дом 10к1</span>
+                <div class="page-header__address-wrapper">
+                    <button class="page-header__button-callback">
+                        <img src="img/button.png">
+                        <span>Обратный звонок</span>
+                    </button>
+                    <div class="page-header__address">
+                        <span>ул. Новаторов дом 10к1</span>
+                    </div>
                 </div>
                 <div class="page-header__tel">                    
                     <a href="tel:4959362430" class="page-header__tel-number">
@@ -70,10 +74,10 @@
                         <span>(495) 936-24-30</span>
                     </a>
                 </div>
-            </div>    
+            </div>
         </header>
 
-        <section class="menu">
+        <section class="menu" style="order: 0">
             <ul class="menu__nav">
                 <li class="menu__nav-item">
                     <a href="about.html" class="menu__nav-link">О салоне</a>
@@ -121,7 +125,9 @@
         </section>
 
         <footer class="page-footer">
+                <img class="page-footer__design" src="img/footer-des.png">
             <div class="page-footer__contacts">
+                <div class="page-footer__adapt">
                 <div class="page-footer__contacts-defend">
                     <a href="#" class="page-footer__contacts-defend-link">Положение о защите персональных данных.</a>
                 </div>
@@ -129,6 +135,7 @@
                     <a href="#" class="page-footer__contacts-inst-link">
                         <img src="img/inst.png" class="page-footer__contacts-inst-img">
                     </a>                     
+                </div>
                 </div>
                 <div class="page-footer__contacts-address">
                     <span class="page-footer__contacts-metro">ст. м.: Калужская</span>

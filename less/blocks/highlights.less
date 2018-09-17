@@ -1,5 +1,7 @@
 .highlights {
-    padding: 0 15px;
+    padding: 0 15px;    
+    width: 290px;
+    margin: 0 auto;
     margin-top: 40px;
 
     .highlights-master {
@@ -56,5 +58,129 @@
         img {
             width: 290px;
         }   
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .highlights {
+        width: 570px;
+        padding: 0;
+
+        .highlights-master {
+            img {
+                width: 570px;
+            }
+
+            h3 {
+                font-size: 35px;
+            }
+
+            p {
+                margin-bottom: 50px;
+            }
+
+            .highlights-master__quest {
+                font-size: 14px;
+            }
+
+            .highlights-master__answer {
+                font-size: 20px;
+            }
+        }
+
+        .highlights-prepare {
+            h3 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 14px;
+
+                span {
+                    line-height: 30px;
+                }                
+            }
+
+            img {
+                width: 570px;
+            }
+        }
+
+        .highlights-paint {
+            h3 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 14px;
+    
+                span {
+                  
+                   
+                    line-height: 30px;
+                }
+            }
+        }
+
+        .highlights-result {
+            img {
+                width: 570px;
+            }
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .highlights {
+        width: 1170px;        
+
+        .highlights-master {
+            display: flex;
+            margin-bottom: 150px;
+
+            .highlights-master__textblock {
+                margin-left: 30px;
+            }
+        }
+
+        .highlights-prepare {
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                margin: 0;
+                margin-left: 15px;
+            }
+
+            p {
+                margin-left: 50px;
+            }
+        }
+
+        .highlights-paint {
+            position: relative;
+            top: -320px;
+
+            h3 {
+                margin: 0;
+                margin-left: 15px;
+            }
+
+            p {
+                margin-left: 50px;
+            }
+        }
+
+        .highlights-result {
+            margin-bottom: 130px;
+            h3 {
+                font-size: 30px;
+                margin-left: 15px;
+            }
+
+            img {
+                width: 1170px;
+            }
+        }
     }
 }

@@ -46,3 +46,39 @@
         }
     }
 }
+
+@media (min-width: @tablet-width) {
+    .other-works {        
+        width: 370px;
+        margin: 0 auto;
+
+        h3 {
+            width: 100%;
+            font-size: 30px;
+            margin-left: 15px;
+        }
+
+        .other-works__item {
+            height: 468px;
+            width: 370px;
+
+            .other-works__item-link {
+                span {
+                    display: block;
+                    font-size: 30px;
+                    padding-top: 415px;
+                    padding-left: 15px;                       
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .other-works {
+        width: 1170px;
+        display: flex;
+        flex-wrap: wrap;        
+        justify-content: space-between;
+    }
+}

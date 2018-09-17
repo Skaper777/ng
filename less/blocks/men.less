@@ -7,7 +7,7 @@
     .men__banner {
         background-image: url(../img/men.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         border: 1px solid #B28553;
         border-radius: 10px;
         margin-bottom: 50px;  
@@ -89,6 +89,65 @@
             padding-bottom: 30px;
             padding-left: 10px;
             padding-top: 355px;
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .men {
+        margin-top: 0px;
+        padding: 0;
+
+        .men__banner {
+            background-image: url(../img/banner.jpg);
+            background-size: cover;
+
+            .men__banner-title {
+                font-size: 35px;
+                padding-left: 15px;
+            }
+
+            .men__banner-text {
+                font-size: 15px;
+                padding-left: 15px;
+            }
+
+            .men__banner-design {
+                left: 610px;
+            }
+        }
+
+        .men-services {
+            .men-services__title {
+                font-size: 30px;
+                margin-bottom: 60px;
+            }
+
+            .men-services__item {
+                .men-services__text {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .men {
+        width: 1170px;
+        margin: 0 auto;
+
+        .men-services {
+            display: flex;
+            flex-wrap: wrap;           
+            justify-content: space-between;
+            margin-bottom: 150px;
+
+            .men-services__title {
+                display: block;
+                text-align: start;
+                width: 100%;
+            }
         }
     }
 }

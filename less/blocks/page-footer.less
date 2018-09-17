@@ -93,6 +93,10 @@
             display: flex;
             justify-content: space-around;
 
+            .page-footer__contacts-defend {
+                margin-top: 12px;
+            }
+
             .page-footer__contacts-address {
                 order: 0;
                 margin-top: 30px;
@@ -114,14 +118,19 @@
 
 @media (min-width: @desktop-width) {
     .page-footer {
+        position: relative;
+        .page-footer__design {
+            position: absolute;
+            top: -35px;
+            left: 1540px;
+        }
+
         .page-footer__contacts {
             justify-content: space-between;
             width: 1170px;
             margin: 0 auto;
 
             .page-footer__contacts-defend {
-                margin-top: 12px;
-
                 .page-footer__contacts-defend-link {
                     font-size: 14px;
                 }

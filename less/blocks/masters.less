@@ -16,14 +16,13 @@
         &:hover {
             background-color: #FFF7EE;
             opacity: 0.5; 
-        }
-        
+        }        
 
         &:nth-of-type(2) {
             background-image: url(../img/fedr.jpg);
         }
 
-        &:nth-of-type(3) {
+        &:last-of-type {
             background-image: url(../img/alex.jpg);
         }
 
@@ -54,6 +53,114 @@
             color: @brown;
             padding-bottom: 20px;
             padding-left: 20px;                     
+        }
+    }
+
+    .masters__list2-item {
+        background-image: url(../img/ed.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-bottom: 30px;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #FFF7EE;
+            opacity: 0.5; 
+        }        
+
+        &:nth-of-type(2) {
+            background-image: url(../img/victoria.jpg);
+        }
+
+        &:last-of-type {
+            background-image: url(../img/gulnara.jpg);
+        }
+
+        .masters__list2-link {
+            display: block;
+            padding-top: 390px;
+            text-decoration: none;
+            box-shadow: 5px 5px 10px -5px;
+            color: @brown;
+            border-radius: 10px;
+        }
+
+        .masters__list2-name {
+            display: block;            
+            font-size: 14px;
+            color: @brown;
+            padding-bottom: 20px;
+            padding-left: 20px;                     
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .masters {
+        padding: 0;
+        width: 370px;
+        margin: 0 auto;
+
+        .masters__title {
+            font-size: 35px;
+            margin-left: 35px;
+        }
+
+        .masters__list-item {
+            width: 270px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px -5px;
+            margin-bottom: 30px;
+
+            .masters__list-link {                
+                padding-top: 350px;                
+            }
+    
+            .masters__list-name {                 
+                font-size: 30px;                
+                padding-bottom: 10px;
+                padding-left: 20px;                     
+            }
+        }
+
+        .masters__list2-item {
+            width: 270px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px -5px;
+            margin-bottom: 30px;
+
+            .masters__list2-link {                
+                padding-top: 350px;                
+            }
+    
+            .masters__list2-name {                 
+                font-size: 30px;                
+                padding-bottom: 10px;
+                padding-left: 20px;                     
+            } 
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .masters {
+        width: 1170px;
+
+        .masters__list,
+        .masters__list2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                margin: 0;
+            }
+        }
+
+        .masters__list {
+            margin-bottom: 30px;
         }
     }
 }
