@@ -50,20 +50,24 @@
                         </li>
                     </ul>                    
                 </nav>
-                <div class="page-header__time">
-                    <span>Ежедневно 8-22 по записи</span>                    
+                <div class="page-header__time-wrapper">
+                    <div class="page-header__time">
+                        <span>Ежедневно 8-22 по записи</span>                    
+                    </div>
+                    <button class="page-header__button-subscribe">
+                        <img src="img/button.png">                    
+                        <span>Записаться на процедуру</span>
+                    </button>
                 </div>
-                <button class="page-header__button-subscribe">
-                    <img src="img/button.png">                    
-                    <span>Записаться на процедуру</span>
-                </button>
-                <button class="page-header__button-callback">
-                    <img src="img/button.png">
-                    <span>Обратный звонок</span>
-                </button>
-                <div class="page-header__address">
-                    <span>ул. Новаторов дом 10к1</span>
-                </div>
+                <div class="page-header__address-wrapper">
+                    <button class="page-header__button-callback">
+                        <img src="img/button.png">
+                        <span>Обратный звонок</span>
+                    </button>
+                    <div class="page-header__address">
+                        <span>ул. Новаторов дом 10к1</span>
+                    </div>
+                </div>                
                 <div class="page-header__tel">                    
                     <a href="tel:4959362430" class="page-header__tel-number">
                         <img src="img/phone.png">
@@ -96,15 +100,18 @@
         <section class="slider">            
             <ul class="slider__list">
                 <li class="slider__slide" id="slide1">
+                    <div>
                     <span class="slider__slide-title">
                         Разорви<br> надоевший образ
                     </span>
                     <span class="slider__slide-text">
                         Всегда рады вам, салон красоты &laquoNG&raquo
                     </span>
-                    <img class="slider__slide-design" src="img/slide-design.png"> 
+                    <img class="slider__slide-design" src="img/slide-design.png">
+                    </div> 
                 </li>
                 <li class="slider__slide" id="slide2">
+                    <div>
                     <h3>&laquoПилона терапия&raquo</h3>                    
                     <span class="slider__slide-text">
                          Комплексное омоложение лица, подходит женщинам,<br>
@@ -117,6 +124,7 @@
                         <img class="slide__slide-red-but" src="img/slide2but.png">
                     </button>
                     <img class="slider__slide-design" src="img/slide-design.png">
+                    </div>
                 </li>
             </ul>
             <div class="slider__controls">
@@ -134,20 +142,96 @@
                 <li class="catalog__item">                                       
                     <a href="men/men.html" class="catalog__item-link">
                         <img src="img/design.png" class="catalog__item-design">                        
-                        <span>Мужчины</span>
+                        <span>Мужчины</span>                        
                     </a>
+                    <ul class="catalog__item-list">
+                        <a href="haircut.html" class="catalog__item-list-link">
+                            <li>
+                                Стрижка
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Стрижка бороды
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Уход за лицом
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Маникюр / педикюр
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Депиляция воск / шугаринг
+                            </li>
+                        </a>    
+                    </ul>
                 </li>
                 <li class="catalog__item">                                   
                     <a href="women/women/html" class="catalog__item-link">                                          
                         <img src="img/design.png" class="catalog__item-design">
                         <span>Женщины</span>
                     </a>
+                    <ul class="catalog__item-list">
+                        <a href="haircut.html" class="catalog__item-list-link">
+                            <li>
+                                Стрижка
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Стрижка бороды
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Уход за лицом
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Маникюр / педикюр
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Депиляция воск / шугаринг
+                            </li>
+                        </a>    
+                    </ul>
                 </li>
                 <li class="catalog__item">                                      
                     <a href="children.html" class="catalog__item-link">
                         <img src="img/design.png" class="catalog__item-design">
                         <span>Дети</span>
                     </a>
+                    <ul class="catalog__item-list">
+                        <a href="haircut.html" class="catalog__item-list-link">
+                            <li>
+                                Стрижка
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Стрижка бороды
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Уход за лицом
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Маникюр / педикюр
+                            </li>
+                        </a>                        
+                    </ul>
                 </li>
             </ul>
             <div class="info">
@@ -157,13 +241,15 @@
 
         <footer class="page-footer">
             <div class="page-footer__contacts">
-                <div class="page-footer__contacts-defend">
-                    <a href="#" class="page-footer__contacts-defend-link">Положение о защите персональных данных.</a>
-                </div>
-                <div class="page-footer__contacts-inst">
-                    <a href="#" class="page-footer__contacts-inst-link">
-                        <img src="img/inst.png" class="page-footer__contacts-inst-img">
-                    </a>                     
+                <div class="page-footer__adapt">
+                    <div class="page-footer__contacts-defend">
+                        <a href="#" class="page-footer__contacts-defend-link">Положение о защите персональных данных.</a>
+                    </div>
+                    <div class="page-footer__contacts-inst">
+                        <a href="#" class="page-footer__contacts-inst-link">
+                            <img src="img/inst.png" class="page-footer__contacts-inst-img">
+                        </a>                     
+                    </div>
                 </div>
                 <div class="page-footer__contacts-address">
                     <span class="page-footer__contacts-metro">ст. м.: Калужская</span>

@@ -1,4 +1,4 @@
-.page-header {
+.page-header {     
     position: relative;
     text-align: center;
     border-bottom-left-radius: 10px;
@@ -8,6 +8,8 @@
     z-index: 5;   
 
     .page-header__wrapper {
+        display: flex;
+        flex-direction: column;   
         padding: 0 15px;
     }
     
@@ -58,6 +60,7 @@
         border: none;
         background: none;
         cursor: pointer;
+        transition: 0.3s;
 
         &:hover {
             background: #B28553;
@@ -101,6 +104,7 @@
             padding: 2px;
             border: 1px solid #B59979;
             border-radius: 20px;
+            transition: 0.3s;
             
             &:hover {
                 background: #B59979;
@@ -114,6 +118,113 @@
                 margin-left: 10px;                
                 color: #7A593A;
             }
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .page-header {
+        .page-header__wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 100px;
+
+            .page-header__time-wrapper {
+                order: 2;
+                width: 100%;
+                .page-header__time {
+                    margin-top: 30px;
+                }  
+            }
+
+            .page-header__nav {
+                order: 0;                
+            }
+
+            .page-header__tel {
+                order: 1;
+                margin-top: 30px;                
+            }
+
+            .page-header__address-wrapper {
+                order: 3;
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .page-header {
+        .page-header__wrapper {
+            padding: 0;
+            width: 1170px;
+            margin: 0 auto;
+
+            .page-header__time-wrapper {
+                order: 0;
+                width: 25%;
+                text-align: start;
+                
+                .page-header__time {
+                    span {
+                        font-size: 16px;
+                    }
+                }
+
+                .page-header__button-subscribe {
+                    margin-top: 5px;
+                    margin-left: 10px;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .page-header__nav {
+                order: 1;                             
+            }
+
+            .page-header__tel {
+                order: 2;
+                width: 25%;
+                padding-bottom: 0; 
+                
+                .page-header__tel-number {
+                    margin-left: 50%;
+                    width: 130px;
+
+                    span {
+                        margin-top: 1px;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .page-header__address-wrapper {
+                order: 3;
+                display: flex;
+                flex-direction: column;
+                width: 20%;
+                text-align: end;
+                
+                .page-header__button-callback {
+                    order: 1;
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                    margin-left: 46px;
+                }
+    
+                .page-header__address {
+                    order: 0;
+                    
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            
         }
     }
 }

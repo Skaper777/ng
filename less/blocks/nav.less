@@ -7,10 +7,11 @@
     .nav__metro {        
         width: 80px;             
         height: 12px;
-        margin-top: 45px;
+        margin-top: 40px;
         padding: 2px;
         border: 1px solid #FF8700;
         border-radius: 15px;
+        transition: 0.3s;
 
         &:hover {
             background: #FF8700;
@@ -140,6 +141,58 @@
 
                 &:hover {
                     box-shadow: 0 5px 15px -7px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .nav {
+        width: calc(51% + 37px);
+        justify-content: space-between;
+
+        .nav__metro {
+            margin-top: 30px;
+            width: 88px;
+            padding: 3px;
+            
+            img {
+                padding-bottom: 1px;
+            }
+            
+            .nav__metro-text {
+                font-size: 13px;               
+            }
+        }
+
+        .nav__open-button {
+            display: none;
+        }
+
+        .nav__logo {
+            margin: 0;
+        }        
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .nav {
+        width: calc(26.7% + 37px);        
+        
+        .nav__logo {
+            .nav__logo-link {
+                .nav__logo-img {
+                    padding: 0 9px;
+                    padding-top: 30px;
+                    width: 100px;
+                }
+
+                .nav__logo-text {
+                    width: 75px;
+                    margin-top: 10px;
+                    font-size: 11px;
+                    white-space: nowrap;
                 }
             }
         }

@@ -1,3 +1,51 @@
 .menu {
     display: none;
 }
+
+@media (min-width: @tablet-width) {
+    .menu {
+        display: block;        
+        order: 2;
+        padding: 0 30px;
+        margin-bottom: 70px;
+
+        .menu__nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 500px;
+            margin: 0 auto;
+
+            .menu__nav-item {
+                width: 20%;
+
+                a {
+                    display: block;
+                    text-align: center;                    
+                    text-decoration: none;
+                    padding: 10px 0;
+                    font-size: 18px;
+                    color: @brown;
+                    border-radius: 7px;
+                    transition: 0.3s;
+
+                    &:hover{
+                        box-shadow: 3px 3px 7px -3px;
+                    }                    
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: @desktop-width) {
+    .menu {
+        margin-bottom: 100px;
+        margin-top: 40px;
+        padding: 0;
+
+        .menu__nav {
+            width: 750px;
+        }
+    }
+}

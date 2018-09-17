@@ -1,5 +1,5 @@
 .page-footer {
-    background-color: #FFEDD6;
+    background-color: #FFF7EE;
     text-align: center;
 
     .page-footer__contacts {
@@ -20,20 +20,20 @@
 
             .page-footer__contacts-metro {
                 display: block;
-                font-size: 19px;
+                font-size: 20px;
                 margin-bottom: 15px;
             }
 
             .page-footer__contacts-street {
                 display: block;
-                font-size: 11px;
+                font-size: 12px;
                 line-height: 20px;
                 margin-bottom: 22px;
             }
 
             .page-footer__contacts-time {
                 display: block;
-                font-size: 11px;
+                font-size: 12px;
                 margin-bottom: 50px;
             }
         }
@@ -43,20 +43,20 @@
 
             .page-footer__contacts-copyright-rights {
                 display: block;
-                font-size: 19px;
+                font-size: 20px;
                 margin-bottom: 20px;
             }
 
             .page-footer__contacts-copyright-taboo {
                 display: block;
-                font-size: 11px;
+                font-size: 12px;
                 line-height: 20px;
                 margin-bottom: 25px;
             }
 
             .page-footer__contacts-copyright-OOO {
                 display: block;
-                font-size: 11px;
+                font-size: 12px;
                 line-height: 20px;
                 margin-bottom: 28px;
             }
@@ -75,7 +75,56 @@
             font-size: 12px;
 
             .page-footer__ad-link {
-                color: #D82F2D;
+                color: white;
+
+               &:hover {
+                   color: #FFE0BE;
+               }
+            }
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .page-footer {
+        order: 5;
+
+        .page-footer__contacts {
+            display: flex;
+            justify-content: space-around;
+
+            .page-footer__contacts-address {
+                order: 0;
+                margin-top: 30px;
+                text-align: left;
+            }            
+
+            .page-footer__adapt {
+                order: 1;
+            }
+
+            .page-footer__contacts-copyright {
+                order: 2;
+                margin-top: 30px;
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .page-footer {
+        .page-footer__contacts {
+            justify-content: space-between;
+            width: 1170px;
+            margin: 0 auto;
+
+            .page-footer__contacts-defend {
+                margin-top: 12px;
+
+                .page-footer__contacts-defend-link {
+                    font-size: 14px;
+                }
             }
         }
     }
