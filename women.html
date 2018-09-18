@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
-        <title>NG</title>
+        <title>Women</title>
     </head>
     <body class="page">
 
@@ -50,20 +50,24 @@
                         </li>
                     </ul>                    
                 </nav>
-                <div class="page-header__time">
-                    <span>Ежедневно 8-22 по записи</span>                    
-                </div>
-                <button class="page-header__button-subscribe">
-                    <img src="img/button.png">                    
-                    <span>Записаться на процедуру</span>
-                </button>
-                <button class="page-header__button-callback">
-                    <img src="img/button.png">
-                    <span>Обратный звонок</span>
-                </button>
-                <div class="page-header__address">
-                    <span>ул. Новаторов дом 10к1</span>
-                </div>
+                <div class="page-header__time-wrapper">
+                        <div class="page-header__time">
+                            <span>Ежедневно 8-22 по записи</span>                    
+                        </div>
+                        <button class="page-header__button-subscribe">
+                            <img src="img/button.png">                    
+                            <span>Записаться на процедуру</span>
+                        </button>
+                    </div>
+                    <div class="page-header__address-wrapper">
+                        <button class="page-header__button-callback">
+                            <img src="img/button.png">
+                            <span>Обратный звонок</span>
+                        </button>
+                        <div class="page-header__address">
+                            <span>ул. Новаторов дом 10к1</span>
+                        </div>
+                    </div>
                 <div class="page-header__tel">                    
                     <a href="tel:4959362430" class="page-header__tel-number">
                         <img src="img/phone.png">
@@ -73,25 +77,25 @@
             </div>    
         </header>
 
-        <section class="menu">
-            <ul class="menu__nav">
-                <li class="menu__nav-item">
-                    <a href="about.html" class="menu__nav-link">О салоне</a>
-                </li>
-                <li class="menu__nav-item">
-                    <a href="men.html" class="menu__nav-link">Мужчины</a>
-                </li>
-                <li class="menu__nav-item">
-                    <a href="women.html" class="menu__nav-link">Женщины</a>
-                </li>
-                <li class="menu__nav-item">
-                    <a href="children.html" class="menu__nav-link">Дети</a>
-                </li>
-                <li class="menu__nav-item">
-                    <a href="contacts.html" class="menu__nav-link">Контакты</a>
-                </li>
-            </ul>
-        </section>
+        <section class="menu" style="order: 0">
+                <ul class="menu__nav">
+                    <li class="menu__nav-item">
+                        <a href="about.html" class="menu__nav-link">О салоне</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a href="men.html" class="menu__nav-link">Мужчины</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a href="women.html" class="menu__nav-link">Женщины</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a href="children.html" class="menu__nav-link">Дети</a>
+                    </li>
+                    <li class="menu__nav-item">
+                        <a href="contacts.html" class="menu__nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </section>
 
         <section class="women">
             <div class="women__banner">
@@ -127,75 +131,115 @@
                     </a>
                 </li>
             </ul>
-            <ul class="anothers-women">
-                <h4 class="anothers-women__title">Другие категории</h4>
-                <li class="anothers-women__item">
-                    <img class="anothers-women__item-design" src="img/design.png">
-                    <a href="men.html" class="anothers-women__item-link">
-                        <ul class="anothers-women__item-list">
-                            <h4 class="anothers-women__item-title">Мужчины</h4>
-                            <li>Стрижка</li>
-                            <li>Стрижка бороды</li>
-                            <li>Уход за лицом</li>
-                            <li>Маникюр / педикюр</li>
-                            <li>Депиляция воск / шугаринг</li>
-                        </ul>
-                    </a>
-                </li>
-                <li class="anothers-women__item">
-                    <img class="anothers-women__item-design" src="img/design.png">
-                    <a href="children.html" class="anothers-women__item-link">
-                        <ul class="anothers-women__item-list">
-                            <h4 class="anothers-women__item-title">Дети</h4>
-                            <li>Стрижка для мальчика</li>
-                            <li>Стрижка для девочки</li>
-                            <li>Чистка лица</li>
-                            <li>Маникюр / Педикюр</li>                            
-                        </ul>
-                    </a>
-                </li>
-            </ul>            
+            <h4 class="anothers__title">Другие категории</h4>
+            <section class="catalog">
+                    <ul class="catalog__list">                    
+                        <li class="catalog__item catalog__item-men">                                   
+                            <a href="women/women/html" class="catalog__item-link">                                          
+                                <img src="img/design.png" class="catalog__item-design">
+                                <span>Мужчины</span>
+                            </a>
+                            <ul class="catalog__item-list">
+                                <a href="haircut.html" class="catalog__item-list-link">
+                                    <li>
+                                        Стрижка
+                                    </li>
+                                </a>
+                                <a href="#" class="catalog__item-list-link">
+                                    <li>
+                                        Стрижка бороды
+                                    </li>
+                                </a>
+                                <a href="#" class="catalog__item-list-link">
+                                    <li>
+                                        Уход за лицом
+                                    </li>
+                                </a>
+                                <a href="#" class="catalog__item-list-link">
+                                    <li>
+                                        Маникюр / педикюр
+                                    </li>
+                                </a>
+                                <a href="#" class="catalog__item-list-link">
+                                    <li>
+                                        Депиляция воск / шугаринг
+                                    </li>
+                                </a>    
+                            </ul>
+                        </li>
+                        <li class="catalog__item catalog__item-children">                                      
+                            <a href="children.html" class="catalog__item-link">
+                                <img src="img/design.png" class="catalog__item-design">
+                                <span>Дети</span>
+                            </a>
+                            <ul class="catalog__item-list">
+                                <a href="haircut.html" class="catalog__item-list-link">
+                                    <li>
+                                        Стрижка
+                                    </li>
+                                </a>
+                                <a href="#" class="catalog__item-list-link">
+                                    <li>
+                                        Стрижка бороды
+                                    </li>
+                                </a>
+                                <a href="#" class="catalog__item-list-link">
+                                    <li>
+                                        Уход за лицом
+                                    </li>
+                                </a>
+                                <a href="#" class="catalog__item-list-link">
+                                    <li>
+                                        Маникюр / педикюр
+                                    </li>
+                                </a>                        
+                            </ul>
+                        </li>
+                    </ul>               
+                </section>        
             <div class="info">
                 <span>Информация, предоставленная на сайте, не является публичной</span>
             </div>
         </section>
 
         <footer class="page-footer">
-            <div class="page-footer__contacts">
-                <div class="page-footer__contacts-defend">
-                    <a href="#" class="page-footer__contacts-defend-link">Положение о защите персональных данных.</a>
+                
+                <div class="page-footer__contacts"><div class="page-footer__adapt">
+                    <div class="page-footer__contacts-defend">
+                        <a href="#" class="page-footer__contacts-defend-link">Положение о защите персональных данных.</a>
+                    </div>
+                    <div class="page-footer__contacts-inst">
+                        <a href="#" class="page-footer__contacts-inst-link">
+                            <img src="img/inst.png" class="page-footer__contacts-inst-img">
+                        </a>                     
+                    </div>
+                    </div>
+                    <div class="page-footer__contacts-address">
+                        <span class="page-footer__contacts-metro">ст. м.: Калужская</span>
+                        <span class="page-footer__contacts-street">
+                            Обручевский район, ул. Новаторов дом 10 к1<br>
+                            +7(968)327-0-327 / +7(495)936-24-30
+                        </span>
+                        <span class="page-footer__contacts-time">Ежедневно 08:00-22:00 по записи.</span>
+                    </div>
+                    <div class="page-footer__contacts-copyright">
+                        <span class="page-footer__contacts-copyright-rights">© Все права защищены, 16+</span>
+                        <span class="page-footer__contacts-copyright-taboo">
+                            Запрещается полное или частичное копировние<br>
+                            материала, без активной ссылки на сайт.
+                        </span>
+                        <span class="page-footer__contacts-copyright-OOO">
+                            OOO  «НГ-салон»  ОГРН:026410640<br>
+                            ИНН:0051561650 / КПП:3219810213250
+                        </span>
+                    </div>
                 </div>
-                <div class="page-footer__contacts-inst">
-                    <a href="#" class="page-footer__contacts-inst-link">
-                        <img src="img/inst.png" class="page-footer__contacts-inst-img">
-                    </a>                     
+                <div class="page-footer__ad">
+                    <p class="page-footer__ad-text">
+                        <span>Разработка и поддержка сайта <a href="yaroshenko-d.ru" class="page-footer__ad-link">yaroshenko-d.ru</a></span>
+                    </p>
                 </div>
-                <div class="page-footer__contacts-address">
-                    <span class="page-footer__contacts-metro">ст. м.: Калужская</span>
-                    <span class="page-footer__contacts-street">
-                        Обручевский район, ул. Новаторов дом 10 к1<br>
-                        +7(968)327-0-327 / +7(495)936-24-30
-                    </span>
-                    <span class="page-footer__contacts-time">Ежедневно 08:00-22:00 по записи.</span>
-                </div>
-                <div class="page-footer__contacts-copyright">
-                    <span class="page-footer__contacts-copyright-rights">© Все права защищены, 16+</span>
-                    <span class="page-footer__contacts-copyright-taboo">
-                        Запрещается полное или частичное копировние<br>
-                        материала, без активной ссылки на сайт.
-                    </span>
-                    <span class="page-footer__contacts-copyright-OOO">
-                        OOO  «НГ-салон»  ОГРН:026410640<br>
-                        ИНН:0051561650 / КПП:3219810213250
-                    </span>
-                </div>
-            </div>
-            <div class="page-footer__ad">
-                <p class="page-footer__ad-text">
-                    <span>Разработка и поддержка сайта <a href="yaroshenko-d.ru" class="page-footer__ad-link">yaroshenko-d.ru</a></span>
-                </p>
-            </div>
-        </footer>
+            </footer>
 
         <script src="js/checkbox.js"></script>
         <script src="js/menu.js"></script>

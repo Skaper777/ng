@@ -36,3 +36,41 @@
         }
     }
 }
+
+@media (min-width: @desktop-width) {
+    .contacts {
+        .contacts__title {
+            margin: 0;
+            margin-left: 360px;
+        }
+
+        .contacts__map {
+            background-size: 100%;
+            height: 800px;
+
+            .contacts__info {
+                background: rgba(0, 0, 0, 0.5);
+                color: #FFE0BE;
+                font-size: 15px;
+                height: 785px;
+                width: 300px;
+                padding: 5px;
+                margin-left: 380px;
+    
+                h3 {
+                    font-weight: 300;
+                }
+            }
+    
+            .contacts__pin {
+                position: absolute;
+                top: 570px;
+                left: 970px;
+    
+                .contacts__pin-icon {
+                    width: 40px;
+                }
+            }
+        }        
+    }
+}

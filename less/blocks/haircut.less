@@ -1,17 +1,20 @@
-.haircut {    
-    margin-top: 40px;
+.haircut {   
+    margin-top: 40px;    
+
+    .haircut__div {
+        width: 290px;
+        margin: 0 auto;
+    }
+    
+    .men-services__item:first-of-type {
+        display: none;
+    } 
 
     .haircut__img {
-        padding: 0 15px;
         width: 290px;
     }
 
-    h3 {
-        padding: 0 15px;
-    }
-
-    p {
-        padding: 0 15px;
+    p {        
         font-size: 12px;
 
         span {
@@ -22,8 +25,6 @@
     }
 
     form {
-        padding: 0 15px;
-
         input {
             position: absolute;
             opacity: 0;
@@ -72,6 +73,7 @@
                 top: -10px;
                 position: absolute;
             }
+
             p {
                 display: block;
                 position: absolute;
@@ -82,56 +84,114 @@
                 color: #FFE0BE;
             }
         }
-    }
+    }    
+}
 
-    .haircut-services {        
-        margin-bottom: 60px;
+@media (min-width: @tablet-width) {
+    .haircut {
+        
+        margin-top: 0;
+
+        .haircut__div {
+            width: 370px;
+        }
+
+        h3 {
+            font-size: 35px;
+        }
+        
+        p {        
+            font-size: 14px;
     
-            .haircut-services__title {
-                font-size: 18px;
-                text-align: center;
-                font-weight: 300;
-            }
-    
-            .haircut-services__link {
-                text-decoration: none;            
-            }
-    
-            .haircut-services__item {
-                width: 270px;
-                margin: 0 auto;
-                margin-bottom: 30px;
-                background-image: url(../img/beard.jpg);
-                background-repeat: no-repeat;
-                border: 1px solid #EFC99F;
-                border-radius: 10px;
-                box-shadow: 5px 5px 10px -5px;
-                
-                &:hover {
-                    background-color: #FDF8F3;
-                }
-    
-                &:nth-of-type(2) {
-                    background-image: url(../img/menNail.jpg);
-                }
-    
-                &:nth-of-type(3) {
-                    background-image: url(../img/menFace.jpg);
-                }    
-    
-                &:last-of-type {               
-                    background-image: url(../img/menBody.jpg);            
-                }
-            }
-    
-            .haircut-services__text {
-                display: block;            
-                font-size: 14px;
-                color: @brown;
-                padding-bottom: 30px;
-                padding-left: 10px;
-                padding-top: 355px;
+            span {                
+                line-height: 30px;
+                margin-bottom: 40px;
             }
         }
+
+        form {
+            input {
+                position: absolute;
+                opacity: 0;
     
+                &:checked + span {
+                    background: @brown;
+                    color: white;
+                }
+            }
+    
+            span {                
+                padding: 12px;
+                font-size: 14px;               
+                
+                &:hover {
+                    background: @brown;
+                    color: white;
+                }
+            }
+
+            .haircut__button {
+                margin-top: 37px;
+                margin-left: 15px;    
+                
+                img {
+                    left: -10px;
+                }
+    
+                p {
+                    font-size: 13px;
+                    left: 16px;
+                    top: -5px;
+                }
+            }
+        }
+
+        .haircut__img {
+            padding: 0;
+            width: 370px;
+        }
+    }    
+}
+
+@media (min-width: @desktop-width) {
+    .haircut {
+        .men-services {
+            margin-top: 100px;
+        }
+        
+        .catalog__title {
+            margin-left: 20px;
+            margin-bottom: 80px;
+        }
+
+        .catalog__list {
+            justify-content: space-around;
+            margin: 0 180px;            
+        }
+
+        .haircut__div {
+            width: 1170px;   
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .haircut__img {
+            width: 570px;
+            margin-bottom: 150px;
+        }
+
+        .haircut__wrap {
+            padding-left: 30px;
+        }
+
+        h3 {
+            margin-top: 0px;
+        }
+
+        form {
+            .haircut__button {
+                margin-top: 77px;
+            }
+        }        
+    }
 }

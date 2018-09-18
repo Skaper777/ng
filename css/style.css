@@ -1117,11 +1117,20 @@ template {
 .catalog {
   padding: 0 15px;
 }
+.catalog .catalog__item-men {
+  background-image: url(../img/men-m.jpg);
+  background-position-y: -1px;
+}
+.catalog .catalog__item-women {
+  background-image: url(../img/women-m.jpg);
+}
+.catalog .catalog__item-children {
+  background-image: url(../img/children-m.jpg);
+  margin-bottom: 28px;
+}
 .catalog .catalog__item {
   position: relative;
-  background-image: url(../img/men-m.jpg);
   background-repeat: no-repeat;
-  background-position-y: -1px;
   background-color: #FFF7EE;
   margin: 0 auto;
   margin-bottom: 60px;
@@ -1130,13 +1139,6 @@ template {
   border: 1px solid #B28553;
   border-radius: 7px;
   transition: 0.3s;
-}
-.catalog .catalog__item:nth-of-type(2) {
-  background-image: url(../img/women-m.jpg);
-}
-.catalog .catalog__item:last-of-type {
-  background-image: url(../img/children-m.jpg);
-  margin-bottom: 28px;
 }
 .catalog .catalog__item .catalog__item-design {
   position: absolute;
@@ -1181,16 +1183,17 @@ template {
   .catalog {
     order: 4;
   }
-  .catalog .catalog__item {
-    width: 370px;
+  .catalog .catalog__item-men {
     background-image: url(../img/men.jpg);
   }
-  .catalog .catalog__item:nth-of-type(2) {
+  .catalog .catalog__item-women {
     background-image: url(../img/women.jpg);
   }
-  .catalog .catalog__item:last-of-type {
+  .catalog .catalog__item-children {
     background-image: url(../img/children.jpg);
-    margin-bottom: 28px;
+  }
+  .catalog .catalog__item {
+    width: 370px;
   }
   .catalog .catalog__item .catalog__item-design {
     position: absolute;
@@ -1213,22 +1216,29 @@ template {
     width: 1170px;
     margin: 0 auto;
   }
+  .catalog .catalog__title {
+    font-size: 30px;
+    margin-left: 20px;
+  }
   .catalog .catalog__list {
     display: flex;
     justify-content: space-between;
   }
   .catalog .catalog__item {
     margin: 0;
-    margin-bottom: 94px;
+    margin-bottom: 150px;
   }
   .catalog .catalog__item span {
     text-align: start;
+    width: 300px;
     padding-left: 70px;
     padding-top: 500px;
     font-size: 30px;
   }
-  .catalog .catalog__item:last-of-type {
-    margin-bottom: 94px;
+  .catalog .catalog__item .catalog__item-design {
+    position: absolute;
+    top: -26px;
+    left: 228px;
   }
   .catalog .catalog__item .catalog__item-list {
     display: block;
@@ -1684,6 +1694,12 @@ template {
   top: -25px;
   left: 168px;
 }
+.men .anothers__title {
+  display: block;
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
 .men .men-services {
   margin-bottom: 60px;
 }
@@ -1746,7 +1762,10 @@ template {
     padding-left: 15px;
   }
   .men .men__banner .men__banner-design {
-    left: 610px;
+    left: 650px;
+  }
+  .men .anothers__title {
+    font-size: 30px;
   }
   .men .men-services .men-services__title {
     font-size: 30px;
@@ -1761,6 +1780,16 @@ template {
     width: 1170px;
     margin: 0 auto;
   }
+  .men .men__banner .men__banner-design {
+    left: 1030px;
+  }
+  .men .catalog__list {
+    justify-content: space-around;
+  }
+  .men .anothers__title {
+    margin-left: 50px;
+    margin-bottom: 85px;
+  }
   .men .men-services {
     display: flex;
     flex-wrap: wrap;
@@ -1770,93 +1799,13 @@ template {
   .men .men-services .men-services__title {
     display: block;
     text-align: start;
+    margin-top: 70px;
+    padding-left: 20px;
     width: 100%;
   }
-}
-.anothers .anothers__title {
-  display: block;
-  font-size: 18px;
-  font-weight: 300;
-  width: 270px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-.anothers .anothers__item {
-  position: relative;
-  width: 270px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-  background-image: url(../img/women.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: #FFF7EE;
-  border: 1px solid #B28553;
-  border-radius: 7px;
-}
-.anothers .anothers__item:hover {
-  background-color: #FDF8F3;
-}
-.anothers .anothers__item:last-of-type {
-  background-image: url(../img/children.jpg);
-}
-.anothers .anothers__item .anothers__item-link {
-  text-decoration: none;
-}
-.anothers .anothers__item .anothers__item-design {
-  position: absolute;
-  top: -26px;
-  left: 154px;
-}
-.anothers .anothers__item .anothers__item-title {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 300;
-  padding-top: 360px;
-  margin-bottom: 25px;
-}
-.anothers .anothers__item .anothers__item-list {
-  list-style: disc;
-  padding-left: 50px;
-  margin-bottom: 20px;
-  color: #65483F;
-}
-.anothers .anothers__item .anothers__item-list li {
-  margin-bottom: 10px;
-  font-size: 12px;
-}
-@media (min-width: 768px) {
-  .anothers .anothers__title {
-    font-size: 30px;
-  }
-  .anothers .anothers__item {
-    width: 370px;
-  }
-  .anothers .anothers__item .anothers__item-title {
-    font-size: 30px;
-    padding-top: 490px;
-  }
-  .anothers .anothers__item .anothers__item-list {
-    padding-left: 50px;
-    margin-bottom: 20px;
-    color: #65483F;
-  }
-  .anothers .anothers__item .anothers__item-list li {
-    margin-bottom: 20px;
-    font-size: 15px;
-  }
-}
-@media (min-width: 1170px) {
-  .anothers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .anothers .anothers__title {
-    display: block;
-    width: 100%;
-  }
-  .anothers .anothers__item {
-    margin-bottom: 150px;
+  .men .men-services .men-services__item {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .women {
@@ -1868,7 +1817,7 @@ template {
 .women .women__banner {
   background-image: url(../img/women.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   border: 1px solid #B28553;
   border-radius: 10px;
   margin-bottom: 50px;
@@ -1894,6 +1843,12 @@ template {
   position: absolute;
   top: -25px;
   left: 168px;
+}
+.women .anothers__title {
+  display: block;
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .women .women-services {
   margin-bottom: 60px;
@@ -1938,6 +1893,70 @@ template {
   padding-bottom: 30px;
   padding-left: 10px;
   padding-top: 355px;
+}
+@media (min-width: 768px) {
+  .women {
+    margin-top: 0;
+    padding: 0;
+  }
+  .women .women__banner {
+    background-image: url(../img/w-banner.jpg);
+    background-size: cover;
+  }
+  .women .women__banner .women__banner-title {
+    font-size: 35px;
+    padding-left: 15px;
+  }
+  .women .women__banner .women__banner-text {
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .women .women__banner .women__banner-design {
+    left: 650px;
+  }
+  .women .anothers__title {
+    font-size: 30px;
+  }
+  .women .women-services .women-services__title {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+  .women .women-services .women-services__item .women-services__text {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1170px) {
+  .women {
+    width: 1170px;
+    margin: 0 auto;
+  }
+  .women .women__banner .women__banner-design {
+    left: 1030px;
+  }
+  .women .catalog__list {
+    justify-content: space-around;
+  }
+  .women .anothers__title {
+    margin-left: 50px;
+    margin-bottom: 85px;
+  }
+  .women .women-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+  .women .women-services .women-services__title {
+    display: block;
+    text-align: start;
+    margin-top: 70px;
+    padding-left: 20px;
+    width: 100%;
+  }
+  .women .women-services .women-services__item {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .anothers-women .anothers-women__title {
   display: block;
@@ -2017,6 +2036,36 @@ template {
 }
 .contacts .contacts__map .contacts__pin .contacts__pin-icon {
   width: 20px;
+}
+@media (min-width: 1170px) {
+  .contacts .contacts__title {
+    margin: 0;
+    margin-left: 360px;
+  }
+  .contacts .contacts__map {
+    background-size: 100%;
+    height: 800px;
+  }
+  .contacts .contacts__map .contacts__info {
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFE0BE;
+    font-size: 15px;
+    height: 785px;
+    width: 300px;
+    padding: 5px;
+    margin-left: 380px;
+  }
+  .contacts .contacts__map .contacts__info h3 {
+    font-weight: 300;
+  }
+  .contacts .contacts__map .contacts__pin {
+    position: absolute;
+    top: 570px;
+    left: 970px;
+  }
+  .contacts .contacts__map .contacts__pin .contacts__pin-icon {
+    width: 40px;
+  }
 }
 .works {
   padding: 0 15px;
@@ -2473,24 +2522,23 @@ template {
 .haircut {
   margin-top: 40px;
 }
+.haircut .haircut__div {
+  width: 290px;
+  margin: 0 auto;
+}
+.haircut .men-services__item:first-of-type {
+  display: none;
+}
 .haircut .haircut__img {
-  padding: 0 15px;
   width: 290px;
 }
-.haircut h3 {
-  padding: 0 15px;
-}
 .haircut p {
-  padding: 0 15px;
   font-size: 12px;
 }
 .haircut p span {
   display: block;
   line-height: 20px;
   margin-bottom: 20px;
-}
-.haircut form {
-  padding: 0 15px;
 }
 .haircut form input {
   position: absolute;
@@ -2544,50 +2592,93 @@ template {
   font-size: 14px;
   color: #FFE0BE;
 }
-.haircut .haircut-services {
-  margin-bottom: 60px;
+@media (min-width: 768px) {
+  .haircut {
+    margin-top: 0;
+  }
+  .haircut .haircut__div {
+    width: 370px;
+  }
+  .haircut h3 {
+    font-size: 35px;
+  }
+  .haircut p {
+    font-size: 14px;
+  }
+  .haircut p span {
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  .haircut form input {
+    position: absolute;
+    opacity: 0;
+  }
+  .haircut form input:checked + span {
+    background: #65483F;
+    color: white;
+  }
+  .haircut form span {
+    padding: 12px;
+    font-size: 14px;
+  }
+  .haircut form span:hover {
+    background: #65483F;
+    color: white;
+  }
+  .haircut form .haircut__button {
+    margin-top: 37px;
+    margin-left: 15px;
+  }
+  .haircut form .haircut__button img {
+    left: -10px;
+  }
+  .haircut form .haircut__button p {
+    font-size: 13px;
+    left: 16px;
+    top: -5px;
+  }
+  .haircut .haircut__img {
+    padding: 0;
+    width: 370px;
+  }
 }
-.haircut .haircut-services .haircut-services__title {
-  font-size: 18px;
-  text-align: center;
-  font-weight: 300;
-}
-.haircut .haircut-services .haircut-services__link {
-  text-decoration: none;
-}
-.haircut .haircut-services .haircut-services__item {
-  width: 270px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  background-image: url(../img/beard.jpg);
-  background-repeat: no-repeat;
-  border: 1px solid #EFC99F;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px -5px;
-}
-.haircut .haircut-services .haircut-services__item:hover {
-  background-color: #FDF8F3;
-}
-.haircut .haircut-services .haircut-services__item:nth-of-type(2) {
-  background-image: url(../img/menNail.jpg);
-}
-.haircut .haircut-services .haircut-services__item:nth-of-type(3) {
-  background-image: url(../img/menFace.jpg);
-}
-.haircut .haircut-services .haircut-services__item:last-of-type {
-  background-image: url(../img/menBody.jpg);
-}
-.haircut .haircut-services .haircut-services__text {
-  display: block;
-  font-size: 14px;
-  color: #65483F;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  padding-top: 355px;
+@media (min-width: 1170px) {
+  .haircut .men-services {
+    margin-top: 100px;
+  }
+  .haircut .catalog__title {
+    margin-left: 20px;
+    margin-bottom: 80px;
+  }
+  .haircut .catalog__list {
+    justify-content: space-around;
+    margin: 0 180px;
+  }
+  .haircut .haircut__div {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .haircut .haircut__img {
+    width: 570px;
+    margin-bottom: 150px;
+  }
+  .haircut .haircut__wrap {
+    padding-left: 30px;
+  }
+  .haircut h3 {
+    margin-top: 0px;
+  }
+  .haircut form .haircut__button {
+    margin-top: 77px;
+  }
 }
 .hairdressing {
   padding: 0 15px;
   margin-top: 40px;
+}
+.hairdressing .women-services__item:first-of-type {
+  display: none;
 }
 .hairdressing .hairdressing__textblock {
   font-size: 14px;
@@ -2621,46 +2712,55 @@ template {
   padding-top: 328px;
   padding-left: 20px;
 }
-.hairdressing .hairdressing-services {
-  margin-bottom: 60px;
+@media (min-width: 768px) {
+  .hairdressing {
+    margin-top: 0;
+    padding: 0;
+    width: 370px;
+    margin: 0 auto;
+  }
+  .hairdressing .hairdressing__title {
+    font-size: 35px;
+    margin-top: 0;
+  }
+  .hairdressing .hairdressing-length .hairdressing-length__title {
+    font-size: 30px;
+    margin-top: 130px;
+  }
+  .hairdressing .hairdressing-length .hairdressing-length__item {
+    width: 370px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .hairdressing .hairdressing-length .hairdressing-length__item span {
+    padding-top: 430px;
+    padding-left: 20px;
+  }
 }
-.hairdressing .hairdressing-services .hairdressing-services__title {
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
-}
-.hairdressing .hairdressing-services .hairdressing-services__link {
-  text-decoration: none;
-}
-.hairdressing .hairdressing-services .hairdressing-services__item {
-  width: 270px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  background-image: url(../img/nail.jpg);
-  background-repeat: no-repeat;
-  border: 1px solid #EFC99F;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px -5px;
-}
-.hairdressing .hairdressing-services .hairdressing-services__item:hover {
-  background-color: #FDF8F3;
-}
-.hairdressing .hairdressing-services .hairdressing-services__item:nth-of-type(2) {
-  background-image: url(../img/brows.jpg);
-}
-.hairdressing .hairdressing-services .hairdressing-services__item:nth-of-type(3) {
-  background-image: url(../img/depilation.jpg);
-}
-.hairdressing .hairdressing-services .hairdressing-services__item:last-of-type {
-  background-image: url(../img/face.jpg);
-}
-.hairdressing .hairdressing-services .hairdressing-services__text {
-  display: block;
-  font-size: 14px;
-  color: #65483F;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  padding-top: 355px;
+@media (min-width: 1170px) {
+  .hairdressing {
+    width: 1170px;
+  }
+  .hairdressing .catalog__list {
+    justify-content: space-around;
+    margin: 0 180px;
+  }
+  .hairdressing .hairdressing__title {
+    margin-left: 60px;
+  }
+  .hairdressing .hairdressing__textblock {
+    margin-left: 90px;
+  }
+  .hairdressing .hairdressing__textblock span {
+    line-height: 30px;
+  }
+  .hairdressing .hairdressing-length .hairdressing-length__title {
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  .hairdressing .hairdressing-length .hairdressing-length__wrap {
+    display: flex;
+  }
 }
 .other-length {
   padding: 0 15px;
@@ -2686,47 +2786,22 @@ template {
   padding-left: 20px;
   color: #FFE0BE;
 }
-.short-services {
-  margin-bottom: 60px;
+.short .hairdressing {
+  margin-bottom: 150px;
 }
-.short-services .short-services__title {
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
+.short .hairdressing .hairdressing-length {
+  margin: 0 180px;
 }
-.short-services .short-services__link {
-  text-decoration: none;
+.short .hairdressing .hairdressing-length__item:first-of-type {
+  display: none;
 }
-.short-services .short-services__item {
-  width: 270px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  background-image: url(../img/hairdress.jpg);
-  background-repeat: no-repeat;
-  border: 1px solid #EFC99F;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px -5px;
+.short .women-services {
+  margin-top: 70px;
 }
-.short-services .short-services__item:hover {
-  background-color: #FDF8F3;
+.short .women-services__item:first-of-type {
+  display: none;
 }
-.short-services .short-services__item:nth-of-type(2) {
-  background-image: url(../img/nail.jpg);
-}
-.short-services .short-services__item:nth-of-type(3) {
-  background-image: url(../img/brows.jpg);
-}
-.short-services .short-services__item:nth-of-type(4) {
-  background-image: url(../img/depilation.jpg);
-}
-.short-services .short-services__item:last-of-type {
-  background-image: url(../img/face.jpg);
-}
-.short-services .short-services__text {
-  display: block;
-  font-size: 14px;
-  color: #65483F;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  padding-top: 355px;
+.short .catalog__list {
+  justify-content: space-around;
+  margin: 0 180px;
 }

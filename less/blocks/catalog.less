@@ -1,11 +1,23 @@
 .catalog {
     padding: 0 15px;
 
+    .catalog__item-men {
+        background-image: url(../img/men-m.jpg);        
+        background-position-y: -1px;
+    }
+
+    .catalog__item-women {
+        background-image: url(../img/women-m.jpg);
+    }
+
+    .catalog__item-children {
+        background-image: url(../img/children-m.jpg);
+        margin-bottom: 28px;
+    }
+
     .catalog__item {
         position: relative;
-        background-image: url(../img/men-m.jpg);        
-        background-repeat: no-repeat;
-        background-position-y: -1px;
+        background-repeat: no-repeat;        
         background-color: #FFF7EE;
         margin: 0 auto;   
         margin-bottom: 60px;
@@ -15,17 +27,6 @@
         border-radius: 7px;
         transition: 0.3s;
         
-        &:nth-of-type(2) {
-            background-image: url(../img/women-m.jpg);
-                   
-        }
-
-        &:last-of-type {
-            background-image: url(../img/children-m.jpg);
-            margin-bottom: 28px;
-           
-        }
-
         .catalog__item-design {
             position: absolute;
             top: -26px;
@@ -77,18 +78,20 @@
     .catalog {
         order: 4;
 
-        .catalog__item {
-            width: 370px;
-            background-image: url(../img/men.jpg);
-
-            &:nth-of-type(2) {
-                background-image: url(../img/women.jpg);                       
-            }
+        .catalog__item-men {
+            background-image: url(../img/men.jpg);             
+        }
     
-            &:last-of-type {
-                background-image: url(../img/children.jpg);
-                margin-bottom: 28px;               
-            }
+        .catalog__item-women {
+            background-image: url(../img/women.jpg); 
+        }
+    
+        .catalog__item-children {
+            background-image: url(../img/children.jpg);           
+        }
+
+        .catalog__item {
+            width: 370px;          
 
             .catalog__item-design {
                 position: absolute;
@@ -116,6 +119,11 @@
         width: 1170px;
         margin: 0 auto;
 
+        .catalog__title {
+            font-size: 30px;
+            margin-left: 20px;
+        }
+
         .catalog__list {
             display: flex;
             justify-content: space-between;
@@ -123,17 +131,20 @@
 
         .catalog__item {
             margin: 0;
-            margin-bottom: 94px;
+            margin-bottom: 150px;
 
             span {
                 text-align: start;
+                width: 300px;
                 padding-left: 70px;
                 padding-top: 500px;  
                 font-size: 30px;                
             }
 
-            &:last-of-type {
-                margin-bottom: 94px;
+            .catalog__item-design {
+                position: absolute;
+                top: -26px;
+                left: 228px;
             }
 
             .catalog__item-list {

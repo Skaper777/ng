@@ -2,6 +2,10 @@
     padding: 0 15px;
     margin-top: 40px;
 
+    .women-services__item:first-of-type {
+        display: none;
+    }
+
     .hairdressing__textblock {
         font-size: 14px;
 
@@ -42,54 +46,71 @@
             }
         }
     }
+    
+}
 
-    .hairdressing-services {
-        margin-bottom: 60px;
+@media (min-width: @tablet-width) {
+    .hairdressing {
+        margin-top: 0;
+        padding: 0;
+        width: 370px;
+        margin: 0 auto;
 
-        .hairdressing-services__title {
-            font-size: 18px;
-            font-weight: 300;
-            text-align: center;
+        .hairdressing__title {
+            font-size: 35px;
+            margin-top: 0;
         }
 
-        .hairdressing-services__link {
-            text-decoration: none;            
-        }
-
-        .hairdressing-services__item {
-            width: 270px;
-            margin: 0 auto;
-            margin-bottom: 30px;
-            background-image: url(../img/nail.jpg);
-            background-repeat: no-repeat;
-            border: 1px solid #EFC99F;
-            border-radius: 10px;
-            box-shadow: 5px 5px 10px -5px;
-            
-            &:hover {
-                background-color: #FDF8F3;
+        .hairdressing-length {
+            .hairdressing-length__title {
+                font-size: 30px;
+                margin-top: 130px;
             }
 
-            &:nth-of-type(2) {
-                background-image: url(../img/brows.jpg);
-            }
+            .hairdressing-length__item {
+                width: 370px;
+                margin: 0 auto;
+                margin-bottom: 30px;
 
-            &:nth-of-type(3) {
-                background-image: url(../img/depilation.jpg);
-            }
-
-            &:last-of-type {               
-                background-image: url(../img/face.jpg);            
+                span {                    
+                    padding-top: 430px;
+                    padding-left: 20px;
+                }
             }
         }
+    }
+}
 
-        .hairdressing-services__text {
-            display: block;            
-            font-size: 14px;
-            color: @brown;
-            padding-bottom: 30px;
-            padding-left: 10px;
-            padding-top: 355px;
+@media (min-width: @desktop-width) {
+    .hairdressing {
+        width: 1170px;
+
+        .catalog__list {
+            justify-content: space-around;
+            margin: 0 180px; 
+        }
+
+        .hairdressing__title {
+            margin-left: 60px;            
+        }
+
+        .hairdressing__textblock {
+            margin-left: 90px;
+
+            span {
+                line-height: 30px;
+            }
+        }
+
+        .hairdressing-length {
+            .hairdressing-length__title {
+                margin-left: 20px;
+                margin-bottom: 50px;
+            }
+
+            .hairdressing-length__wrap {
+                display: flex;
+            }
         }
     }
 }

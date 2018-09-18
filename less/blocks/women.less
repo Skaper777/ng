@@ -7,7 +7,7 @@
     .women__banner {
         background-image: url(../img/women.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         border: 1px solid #B28553;
         border-radius: 10px;
         margin-bottom: 50px;  
@@ -36,6 +36,13 @@
             top: -25px;
             left: 168px;
         }
+    }
+
+    .anothers__title {
+        display: block;
+        width: 290px;
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
 
     .women-services {
@@ -89,6 +96,91 @@
             padding-bottom: 30px;
             padding-left: 10px;
             padding-top: 355px;
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .women {
+        margin-top: 0;
+        padding: 0;
+        
+        .women__banner {
+            background-image: url(../img/w-banner.jpg);
+            background-size: cover;
+
+            .women__banner-title {
+                font-size: 35px;
+                padding-left: 15px;
+            }
+
+            .women__banner-text {
+                font-size: 15px;
+                padding-left: 15px;
+            }
+
+            .women__banner-design {
+                left: 650px;
+            }
+        }
+
+        .anothers__title {
+            font-size: 30px;
+        }
+
+        .women-services {
+            .women-services__title {
+                font-size: 30px;
+                margin-bottom: 60px;
+            }
+
+            .women-services__item {
+                .women-services__text {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .women {
+        width: 1170px;
+        margin: 0 auto;
+
+        .women__banner {
+            .women__banner-design {
+                left: 1030px;
+            }
+        }
+
+        .catalog__list {
+            justify-content: space-around;           
+        }
+
+        .anothers__title {
+            margin-left: 50px; 
+            margin-bottom: 85px;
+        }
+
+        .women-services {
+            display: flex;
+            flex-wrap: wrap;           
+            justify-content: space-between;
+            margin-bottom: 150px;
+
+            .women-services__title {
+                display: block;
+                text-align: start;
+                margin-top: 70px;
+                padding-left: 20px;
+                width: 100%;
+            }
+
+            .women-services__item {
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
     }
 }
