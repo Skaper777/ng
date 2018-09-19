@@ -1,24 +1,28 @@
 .contacts {
     color: @brown;    
 
-    .contacts__title {
-        padding-left: 15px;
+    .contacts__title {        
         font-weight: 300;
+        padding-left: 15px;
     }
 
-    .contacts__map {
-        position: relative;
+    .contacts__map {        
         background: url(../img/map.jpg) no-repeat 50%;
         background-size: cover;
         margin-bottom: 20px;
 
+        .contacts__info-wrap {            
+            display: flex;
+            flex-direction: row;
+        }
+
         .contacts__info {
             background: rgba(0, 0, 0, 0.5);
-            color: #FFE0BE;
+            color: #FFE0BE;  
+            margin-left: 15px;          
             font-size: 11px;
             width: 100px;
-            padding: 5px;
-            margin-left: 15px;
+            padding: 5px;            
 
             h3 {
                 font-weight: 300;
@@ -26,9 +30,10 @@
         }
 
         .contacts__pin {
-            position: absolute;
-            top: 170px;
-            left: 170px;
+            position: static;
+            width: 20px;
+            margin-top: 170px;
+            left: 400px;           
 
             .contacts__pin-icon {
                 width: 20px;
@@ -37,22 +42,38 @@
     }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
     .contacts {
         .contacts__title {
             margin: 0;
-            margin-left: 360px;
+            margin-bottom: 25px;
+            margin-left: 160px;
         }
 
         .contacts__map {
-            background-size: 100%;
+            .contacts__info {
+                margin-left: 160px;
+            }
+        }
+
+       
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .contacts {
+        .contacts__title {           
+            margin-left: 360px;
+        }
+
+        .contacts__map {           
             height: 800px;
 
             .contacts__info {
                 background: rgba(0, 0, 0, 0.5);
                 color: #FFE0BE;
                 font-size: 15px;
-                height: 785px;
+                height: 790px;
                 width: 300px;
                 padding: 5px;
                 margin-left: 380px;

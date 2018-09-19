@@ -1,7 +1,12 @@
 {
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
   "name": "packs",
   "version": "1.0.0",
-  "description": "portfolio",
+  "description": "ng",
   "main": "gulpfile.js",
   "dependencies": {
     "autoprefixer": "^9.1.5",
@@ -32,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Skaper777/portfolio.git"
+    "url": "git+https://github.com/Skaper777/ng.git"
   },
   "author": "Semenov Sergey",
   "license": "ISC",
