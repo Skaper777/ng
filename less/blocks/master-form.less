@@ -1,0 +1,192 @@
+.master__form {               
+    position: fixed;           
+    top: 25%;
+    width: 300px;
+    margin: 0 auto;
+    background: #FFF7EE;
+    border-radius: 10px;
+
+    .master__form-title {
+        display: block;
+        color: #FFF7EE;
+        margin: 0;
+        padding: 13px 0;
+        padding-left: 60px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background: linear-gradient(to right, #751D1B, #240F00);
+        font-size: 18px;
+    }
+
+    .master__form-close {
+        position: absolute;
+        top: 10px;
+        left: 260px;       
+        width: 25px;
+        height: 25px;
+        border: none;            
+        border-radius: 100%;
+        background: white;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background: #FFE0BE;
+        }
+
+        div {
+            position: absolute;
+            width: 27px;
+            height: 2px;
+            left: -1px;
+            top: 11px;
+            background: @brown;
+            border-radius: 7px;
+            transform: rotate(45deg);
+
+            &:last-of-type {
+                transform: rotate(135deg); 
+            }
+        }       
+    }
+
+    fieldset {            
+        border: none;
+        margin: 0;
+        margin-top: 30px;
+        padding: 0 15px;
+
+        select,
+        input {
+            display: block;
+            width: 100%;
+            color: #EFC99F;
+            height: 30px;
+            
+            padding-left: 0px;
+            margin-bottom: 25px;
+            border: none;
+            border-radius: 7px;
+            font-size: 13px;
+            transition: 0.3s;
+
+            &:active, 
+            &:focus {
+                color: @brown;
+                background: #FFE0BE;
+            }
+
+            &::placeholder {
+                color: #EFC99F;
+            }
+        }
+    }
+
+    
+    .master__form-ball {
+        position: absolute;
+        left: 15px;
+        width: 28px;
+        height: 28px;
+        border: 1px solid red;
+        border-radius: 100%;
+        background: #FFE0BE;
+        transition: 0.3s;
+
+        img {
+            position: absolute;
+            display: none;
+            top: -1px;
+            left: -1px;            
+
+            &:last-of-type {
+                top: 5px;
+                left: 10px;
+            }
+        }
+
+        input {            
+            width: 30px;
+            height: 30px;
+            opacity: 0;
+            cursor: pointer;
+            
+            &:checked ~ img {               
+                display: block;                
+            }
+        }
+    }
+
+    p {
+        font-size: 15px;
+        padding: 0 50px;
+        margin: 0;
+        margin-left: 10px;
+        margin-bottom: 24px;
+    }
+
+    .master__form-button {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background: none;
+        border: none;                    
+        padding: 0;
+        cursor: pointer;
+
+        &:hover .black {
+            display: block;
+        }
+
+        .black {
+            display: none;
+            position: absolute;
+            left: 15px;
+            top: 14px;
+            width: 185px;
+            height: 35px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 3;
+        }
+
+        span {
+            position: absolute;
+            top: 22px;
+            left: 50px;
+            font-size: 14px;
+            color: #FFE0BE;
+            z-index: 2;
+        }
+    }        
+}
+
+.master__form-blue {
+    display: none;
+    transition: 0.3s;
+}
+
+@media (min-width: @desktop-width) {
+    .master__form-blue {
+        //display: block;           
+        position: absolute;           
+        top: 50px;
+        left: 350px;
+        
+        h4 {
+            position: absolute;
+            top: -10px;
+            left: 40px;
+            font-size: 20px;
+        }
+
+        span {
+            position: absolute;
+            top: 50px;
+            left: 40px;
+            color: white;
+            font-size: 12px;
+        }
+    }
+}

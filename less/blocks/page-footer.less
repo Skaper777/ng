@@ -118,12 +118,7 @@
 
 @media (min-width: @desktop-width) {
     .page-footer {
-        position: relative;
-        .page-footer__design {
-            position: absolute;
-            top: -35px;
-            left: 1540px;
-        }
+        position: relative;       
 
         .page-footer__contacts {
             justify-content: space-between;
@@ -136,5 +131,13 @@
                 }
             }
         }
+    }
+}
+
+@media (min-width: @hd-width) {
+    .page-footer__design {
+        position: absolute;
+        top: -35px;
+        left: 1540px;
     }
 }

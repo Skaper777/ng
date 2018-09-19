@@ -1,0 +1,223 @@
+.subscribe-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    .subscribe-popup__wrapper {
+        width: 300px;
+        margin: 0 auto;
+    }        
+}
+
+.subscribe-popup__form {               
+    position: fixed;           
+    top: 25%;
+    width: 300px;
+    margin: 0 auto;
+    background: #FFF7EE;
+    border-radius: 10px;
+
+    .subscribe-popup__form-title {
+        display: block;
+        color: #FFE0BE;        
+        margin: 0;
+        padding: 13px 0;
+        padding-left: 25px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background: linear-gradient(to right, #B28553, #65483F);
+        font-size: 18px;
+    }
+
+    .subscribe-popup__form-close {
+        position: absolute;
+        top: 10px;
+        left: 260px;       
+        width: 25px;
+        height: 25px;
+        border: none;            
+        border-radius: 100%;
+        background: white;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background: #FFE0BE;
+        }
+
+        div {
+            position: absolute;
+            width: 27px;
+            height: 2px;
+            left: -1px;
+            top: 11px;
+            background: @brown;
+            border-radius: 7px;
+            transform: rotate(45deg);
+
+            &:last-of-type {
+                transform: rotate(135deg); 
+            }
+        }       
+    }
+
+    fieldset {            
+        border: none;
+        margin: 0;
+        margin-top: 30px;
+        padding: 0 15px;
+
+        select,
+        input {
+            display: block;
+            width: 100%;
+            color: #EFC99F;
+            height: 30px;
+            
+            padding-left: 0px;
+            margin-bottom: 25px;
+            border: none;
+            border-radius: 7px;
+            font-size: 13px;
+            transition: 0.3s;
+
+            &:active, 
+            &:focus {
+                color: @brown;
+                background: #FFE0BE;
+            }
+
+            &::placeholder {
+                color: #EFC99F;
+            }
+        }
+    }
+
+    
+    .subscribe-popup__form-ball {
+        position: absolute;
+        left: 15px;
+        width: 28px;
+        height: 28px;
+        border: 1px solid red;
+        border-radius: 100%;
+        background: #FFE0BE;
+        transition: 0.3s;
+
+        img {
+            position: absolute;
+            display: none;
+            top: -1px;
+            left: -1px;            
+
+            &:last-of-type {
+                top: 5px;
+                left: 10px;
+            }
+        }
+
+        input {            
+            width: 30px;
+            height: 30px;
+            opacity: 0;
+            cursor: pointer;
+            
+            &:checked ~ img {               
+                display: block;                
+            }
+        }        
+    }
+
+    p {
+        font-size: 15px;
+        padding: 0 50px;
+        margin: 0;
+        margin-left: 10px;
+        margin-bottom: 24px;
+    }
+
+    .subscribe-popup__form-button {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background: none;
+        border: none;                    
+        padding: 0;
+        cursor: pointer;
+
+        &:hover .black {
+            display: block;
+        }
+
+        .black {
+            display: none;
+            position: absolute;
+            left: 13px;
+            top: 13px;
+            width: 185px;
+            height: 35px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 3;
+        }
+
+        span {
+            position: absolute;
+            top: 22px;
+            left: 50px;
+            font-size: 14px;
+            color: #FFE0BE;
+            z-index: 2;
+        }
+    }        
+}
+
+.subscribe-popup__form-blue {
+    display: none;
+    transition: 0.3s;
+}
+
+@media (min-width: @desktop-width) {
+    .subscribe-popup__form-blue {
+        //display: block;           
+        position: absolute;           
+        top: 0px;
+        left: 350px;
+        
+        h4 {
+            position: absolute;
+            top: 0px;
+            left: 40px;
+            font-size: 20px;
+
+            &:nth-of-type(2) {
+                top: 50px;
+            }
+
+            &:last-of-type {
+                top: 100px;
+            }
+        }
+
+        span {
+            position: absolute;
+            top: 50px;
+            left: 40px;
+            color: white;
+            font-size: 12px;
+
+            &:nth-of-type(2) {
+                top: 100px;
+            }
+
+            &:last-of-type {
+                top: 150px;
+            }
+        }
+    }
+}

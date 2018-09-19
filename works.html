@@ -54,13 +54,13 @@
                         <div class="page-header__time">
                             <span>Ежедневно 8-22 по записи</span>                    
                         </div>
-                        <button class="page-header__button-subscribe">
+                        <button class="page-header__button-subscribe subscribe__open">
                             <img src="img/button.png">                    
                             <span>Записаться на процедуру</span>
                         </button>
                     </div>
                     <div class="page-header__address-wrapper">
-                        <button class="page-header__button-callback">
+                        <button class="page-header__button-callback callback__open">
                             <img src="img/button.png">
                             <span>Обратный звонок</span>
                         </button>
@@ -207,7 +207,106 @@
                 </div>
             </footer>
 
-        <script src="js/checkbox.js"></script>
+            <div class="subscribe-popup">
+                <div class="subscribe-popup__wrapper">
+                    <form method="POST" class="subscribe-popup__form">
+                        <h4 class="subscribe-popup__form-title">Записаться на процедуру</h4>
+                        <div class="subscribe-popup__form-close subscribe-popup__close">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <fieldset>
+                            <select name="subscribe-popup">
+                                <option>Пилона терапия</option>                        
+                            </select>
+                            <input type="date" name="date" placeholder="Выберете дату">
+                            <input type="time" name="time" placeholder="Выберете время">
+                            <input type="text" name="name" placeholder="Как к вам обращаться">
+                            <input type="tel" name="tel" placeholder="Телефон: +7 (">
+                        </fieldset>
+                        <label class="subscribe-popup__form-ball">
+                            <input type="checkbox">
+                            <img src="img/sub-ball.png">                        
+                            <img src="img/form-ok.png">
+                        </label>
+                        <p>
+                            <a href="#" class="subscribe-popup__form-license">
+                                Согласие на обработку персональных данных
+                            </a>
+                        </p>
+                        <button class="subscribe-popup__form-button" type="submit">
+                            <img src="img/sub-pop.png">
+                            <div class="black"></div>
+                            <span>Отправить заявку</span>
+                        </button>
+                        <div class="subscribe-popup__form-blue">
+                            <img src="img/big-blue.png">
+                            <h4>Мужчины</h4>
+                            <span>
+                                &lt;услуги из категории&gt;                         
+                            </span>
+                            <h4>Женщины</h4>
+                                <span>
+                                    &lt;услуги из категории&gt;                         
+                            </span>
+                            <h4>Дети</h4>
+                                <span>
+                                    &lt;услуги из категории&gt;                         
+                            </span>
+                            </div> 
+                        </form>
+                    </div>
+            </div>
+    
+            <div class="callback-popup">
+                <div class="callback-popup__wrapper">
+                    <form method="POST" class="callback-popup__form">
+                        <h4 class="callback-popup__form-title">Обратный звонок</h4>
+                        <div class="callback-popup__form-close callback-popup__close">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <fieldset>                        
+                            <input type="text" name="name" placeholder="Как к вам обращаться">
+                            <input type="tel" name="tel" placeholder="Телефон: +7 (">
+                        </fieldset>
+                        <label class="callback-popup__form-ball">
+                            <input type="checkbox">
+                            <img src="img/call.png">                        
+                            <img src="img/form-ok.png">
+                        </label>
+                        <p>
+                            <a href="#" class="callback-popup__form-license">
+                                Согласие на обработку персональных данных
+                            </a>
+                        </p>
+                        <button class="callback-popup__form-button" type="submit">
+                            <img src="img/button-m.png">
+                            <div class="black"></div>
+                            <span>Отправить заявку</span>
+                        </button>
+                        <div class="callback-popup__form-blue">
+                            <img src="img/big-blue.png">
+                            <h4>Мужчины</h4>
+                            <span>
+                                &lt;услуги из категории&gt;                         
+                            </span>
+                            <h4>Женщины</h4>
+                                <span>
+                                    &lt;услуги из категории&gt;                         
+                            </span>
+                            <h4>Дети</h4>
+                                <span>
+                                    &lt;услуги из категории&gt;                         
+                            </span>
+                            </div> 
+                        </form>
+                    </div>
+            </div>
+    
+            <script src="js/callback.js"></script>
+                <script src="js/subscribe.js"></script>
+      
         <script src="js/menu.js"></script>
 
     </body>

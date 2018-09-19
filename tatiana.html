@@ -13,7 +13,7 @@
                 <nav class="page-header__nav nav">
                     <div class="nav__metro">
                         <a href="contacts.html" class="nav__metro-link">
-                            <img src="../img/metro.png" class="nav__metro-img">
+                            <img src="img/metro.png" class="nav__metro-img">
                             <span class="nav__metro-text">Калужская</span>
                         </a>
                     </div>
@@ -60,7 +60,7 @@
                         </button>
                     </div>
                     <div class="page-header__address-wrapper">
-                        <button class="page-header__button-callback">
+                        <button class="page-header__button-callback callback__open">
                             <img src="img/button.png">
                             <span>Обратный звонок</span>
                         </button>
@@ -119,7 +119,7 @@
                     Татьяне целыми семьями.
                 </span>
             </p>
-            <button class="master__button">
+            <button class="master__button popup__open">
                 <div class="black"></div>
                 <img src="img/master-button.png" class="master__button-img">
                 <span>Записаться к мастеру</span>     
@@ -192,7 +192,7 @@
         </section>
 
         <footer class="page-footer">
-                
+                <img class="page-footer__design" src="img/footer-des.png">
                 <div class="page-footer__contacts"><div class="page-footer__adapt">
                     <div class="page-footer__contacts-defend">
                         <a href="#" class="page-footer__contacts-defend-link">Положение о защите персональных данных.</a>
@@ -231,12 +231,13 @@
             </footer>
 
         <div class="popup">
+            <div class="popup__wrapper">
             <form method="POST" class="master__form">
                 <h4 class="master__form-title">Записаться к мастеру</h4>
-                <button class="master__form-close">
+                <div class="master__form-close popup__close">
                     <div></div>
                     <div></div>
-                </button>
+                </div>
                 <fieldset>
                     <select name="master">
                         <option>Татьяна</option>
@@ -246,35 +247,138 @@
                         <option>Виктория</option>
                         <option>Гульнара</option>
                     </select>
-                    <input type="date" name="date">
-                    <input type="time" name="time">
-                    <input type="text" name="name">
-                    <input type="tel" name="tel">
+                    <input type="date" name="date" placeholder="Выберете дату">
+                    <input type="time" name="time" placeholder="Выберете время">
+                    <input type="text" name="name" placeholder="Как к вам обращаться">
+                    <input type="tel" name="tel" placeholder="Телефон: +7 (">
                 </fieldset>
-                <div class="master__form-ball">
-                    <img>
-                    <img>
-                </div>
+                <label class="master__form-ball">
+                    <input type="checkbox">
+                    <img src="img/form-ball.png">
+                    <img src="img/form-ok.png">
+                </label>
                 <p>
-                    <a class="master__form-license">
+                    <a href="#" class="master__form-license">
                         Согласие на обработку персональных данных
                     </a>
                 </p>
                 <button class="master__form-button" type="submit">
-                    <img>
+                    <img src="img/master-button.png">
+                    <div class="black"></div>
                     <span>Отправить заявку</span>
                 </button>
                 <div class="master__form-blue">
-                    <img>
-                    <h4>Из списка мастеров</h4>
-                    <span>
-                        <услуги из="" категории="">
-                    </услуги></span>
-                </div>
-            </form>            
+                        <img src="img/blue-master.png">
+                        <h4>Из списка мастеров</h4>
+                        <span>
+                            &lt;услуги из категории&gt;                         
+                    </span>
+                    </div> 
+                </form>
+            </div>                                 
         </div>
 
-        <script src="js/checkbox.js"></script>
+        <div class="subscribe-popup">
+            <div class="subscribe-popup__wrapper">
+                <form method="POST" class="subscribe-popup__form">
+                    <h4 class="subscribe-popup__form-title">Записаться на процедуру</h4>
+                    <div class="subscribe-popup__form-close subscribe-popup__close">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <fieldset>
+                        <select name="subscribe-popup">
+                            <option>Пилона терапия</option>                        
+                        </select>
+                        <input type="date" name="date" placeholder="Выберете дату">
+                        <input type="time" name="time" placeholder="Выберете время">
+                        <input type="text" name="name" placeholder="Как к вам обращаться">
+                        <input type="tel" name="tel" placeholder="Телефон: +7 (">
+                    </fieldset>
+                    <label class="subscribe-popup__form-ball">
+                        <input type="checkbox">
+                        <img src="img/sub-ball.png">                        
+                        <img src="img/form-ok.png">
+                    </label>
+                    <p>
+                        <a href="#" class="subscribe-popup__form-license">
+                            Согласие на обработку персональных данных
+                        </a>
+                    </p>
+                    <button class="subscribe-popup__form-button" type="submit">
+                        <img src="img/sub-pop.png">
+                        <div class="black"></div>
+                        <span>Отправить заявку</span>
+                    </button>
+                    <div class="subscribe-popup__form-blue">
+                        <img src="img/big-blue.png">
+                        <h4>Мужчины</h4>
+                        <span>
+                            &lt;услуги из категории&gt;                         
+                        </span>
+                        <h4>Женщины</h4>
+                            <span>
+                                &lt;услуги из категории&gt;                         
+                        </span>
+                        <h4>Дети</h4>
+                            <span>
+                                &lt;услуги из категории&gt;                         
+                        </span>
+                        </div> 
+                    </form>
+                </div>
+        </div>
+
+        <div class="callback-popup">
+            <div class="callback-popup__wrapper">
+                <form method="POST" class="callback-popup__form">
+                    <h4 class="callback-popup__form-title">Обратный звонок</h4>
+                    <div class="callback-popup__form-close callback-popup__close">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <fieldset>                        
+                        <input type="text" name="name" placeholder="Как к вам обращаться">
+                        <input type="tel" name="tel" placeholder="Телефон: +7 (">
+                    </fieldset>
+                    <label class="callback-popup__form-ball">
+                        <input type="checkbox">
+                        <img src="img/call.png">                        
+                        <img src="img/form-ok.png">
+                    </label>
+                    <p>
+                        <a href="#" class="callback-popup__form-license">
+                            Согласие на обработку персональных данных
+                        </a>
+                    </p>
+                    <button class="callback-popup__form-button" type="submit">
+                        <img src="img/button-m.png">
+                        <div class="black"></div>
+                        <span>Отправить заявку</span>
+                    </button>
+                    <div class="callback-popup__form-blue">
+                        <img src="img/big-blue.png">
+                        <h4>Мужчины</h4>
+                        <span>
+                            &lt;услуги из категории&gt;                         
+                        </span>
+                        <h4>Женщины</h4>
+                            <span>
+                                &lt;услуги из категории&gt;                         
+                        </span>
+                        <h4>Дети</h4>
+                            <span>
+                                &lt;услуги из категории&gt;                         
+                        </span>
+                        </div> 
+                    </form>
+                </div>
+        </div>
+
+        <script src="js/callback.js"></script>
+    
+            <script src="js/subscribe.js"></script>
+        <script src="js/popup.js"></script>
         <script src="js/menu.js"></script>
 
     </body>

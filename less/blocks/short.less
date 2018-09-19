@@ -1,11 +1,7 @@
 .short {
     
     .hairdressing {
-        margin-bottom: 150px;
-
-        .hairdressing-length {
-            margin: 0 180px;
-        }
+        margin-bottom: 150px;        
 
         .hairdressing-length__item:first-of-type {
             display: none;
@@ -18,10 +14,15 @@
 
     .women-services__item:first-of-type {
         display: none;        
-    }
+    }   
     
-    .catalog__list {
-        justify-content: space-around;
-        margin: 0 180px;
+}
+
+@media (min-width: @desktop-width) {
+    .short {
+        .catalog__list {
+            justify-content: space-around;
+            margin: 0 180px;
+        }
     }
 }
