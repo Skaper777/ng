@@ -917,53 +917,73 @@ template {
 .slider .slider__list .slider__slide {
   height: 130px;
 }
+.slider .slider__list .slider__slide .slider__slide-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 310px;
+  margin: 0 auto;
+  height: inherit;
+}
+.slider .slider__list .slider__slide .slider__slide-img {
+  width: 230px;
+  left: 0;
+  position: absolute;
+}
+.slider .slider__list .slider__slide .slider__slide-textblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
 .slider .slider__list .slider__slide:first-of-type {
   background-color: #FFE4E4;
 }
-.slider .slider__list .slider__slide:first-of-type div {
-  width: 310px;
-  margin: 0 auto;
-  background-image: url(../img/slide1.jpg);
-  background-repeat: no-repeat;
-  background-position-y: 50%;
-}
 .slider .slider__list .slider__slide:first-of-type .slider__slide-title {
   display: block;
-  padding-top: 19px;
-  margin-left: 105px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   color: #65483F;
   font-size: 18px;
 }
 .slider .slider__list .slider__slide:first-of-type .slider__slide-text {
   display: block;
-  margin-left: 105px;
-  margin-bottom: 26px;
   color: #65483F;
   font-size: 10px;
 }
-.slider .slider__list .slider__slide:first-of-type img {
-  margin-top: 3px;
-  margin-left: 105px;
-}
 .slider .slider__list .slider__slide:last-of-type {
-  position: relative;
   display: none;
   padding-left: 15px;
   background-color: #F2F3EA;
 }
-.slider .slider__list .slider__slide:last-of-type div {
-  width: 310px;
-  margin: 0 auto;
-  background-image: url(../img/slide2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.slider .slider__list .slider__slide:last-of-type .slider__slide-wrap {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.slider .slider__list .slider__slide:last-of-type .slider__slide-textblock {
+  margin: 0;
+}
+.slider .slider__list .slider__slide:last-of-type .slider__slide-img {
+  left: 70px;
 }
 .slider .slider__list .slider__slide:last-of-type h3 {
   display: block;
   margin: 0;
   margin-bottom: 10px;
-  padding-top: 5px;
   font-size: 14px;
   color: #D82F2D;
   font-weight: normal;
@@ -971,11 +991,12 @@ template {
 .slider .slider__list .slider__slide:last-of-type .slider__slide-text {
   display: block;
   font-size: 8px;
-  padding-right: 130px;
+  margin-bottom: 10px;
 }
 .slider .slider__list .slider__slide:last-of-type .slider__slide-sale {
   font-size: 10px;
   color: #D82F2D;
+  margin-bottom: 5px;
 }
 .slider .slider__list .slider__slide:last-of-type .slider__slide-button {
   position: relative;
@@ -1012,11 +1033,6 @@ template {
   display: block;
   position: relative;
   width: 100px;
-}
-.slider .slider__list .slider__slide:last-of-type .slider__slide-design {
-  position: relative;
-  top: 6px;
-  margin-left: 98px;
 }
 .slider .slider__controls {
   margin-top: 14px;
@@ -1055,21 +1071,13 @@ template {
   .slider .slider__list .slider__slide {
     height: 200px;
   }
-  .slider .slider__list .slider__slide:first-of-type div {
-    background-image: url(../img/slide1-big.jpg);
-    background-size: 60%;
-    width: 500px;
-  }
   .slider .slider__list .slider__slide:first-of-type .slider__slide-title {
-    padding-top: 55px;
-    margin-left: 135px;
     font-size: 22px;
   }
   .slider .slider__list .slider__slide:first-of-type .slider__slide-title br {
     display: none;
   }
   .slider .slider__list .slider__slide:first-of-type .slider__slide-text {
-    margin-left: 135px;
     font-size: 14px;
   }
   .slider .slider__list .slider__slide:first-of-type img {
@@ -1206,6 +1214,7 @@ template {
 }
 .catalog {
   padding: 0 15px;
+  margin-top: 40px;
 }
 .catalog .catalog__item-men {
   background-image: url(../img/men-m.jpg);
@@ -2445,7 +2454,7 @@ template {
   position: absolute;
   top: 0;
   z-index: 4;
-  height: 100%;
+  height: 700px;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
