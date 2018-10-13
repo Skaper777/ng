@@ -8,7 +8,7 @@
             content: url(../img/slide-design.png);
             position: absolute;
             top: 111px;
-            left: 304px;//////////////////*****
+            left: calc(50% - 47px);           
         }        
 
         .slider__slide {
@@ -179,6 +179,10 @@
 @media (min-width: @tablet-width) {
     .slider {
         .slider__list {
+            &::after {
+                top: 181px;
+            }
+
             .slider__slide {
                 height: 200px;
 
@@ -259,6 +263,10 @@
 @media (min-width: @desktop-width) {
     .slider {
         .slider__list {
+            &::after {
+                top: 431px;
+            }
+
             .slider__slide {
                 height: 450px;
 

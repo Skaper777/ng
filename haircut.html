@@ -1,185 +1,192 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Haircut</title>
-    </head>
-    <body class="page">
 
-        <header class="page-header">
-            <div class="page-header__wrapper">
-                <nav class="page-header__nav nav">
-                    <div class="nav__metro">
-                        <a href="contacts.html" class="nav__metro-link">
-                            <img src="img/metro.png" class="nav__metro-img">
-                            <span class="nav__metro-text">Калужская</span>
-                        </a>
-                    </div>
-                    <div class="nav__logo">
-                        <a href="index.html" class="nav__logo-link">
-                            <img src="img/logo.png" class="nav__logo-img">
-                            <span class="nav__logo-text">Салон красоты</span>
-                        </a>
-                    </div>
-                    <button class="nav__open-button">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </button>
-                    <button class="nav__close-button">
-                        <div></div>
-                        <div></div>
-                    </button>
-                    <ul class="nav__menu-mobile">
-                        <li class="nav__menu-mobile-item">
-                            <a href="about.html" class="nav__menu-mobile-link">О салоне</a>
-                        </li>
-                        <li class="nav__menu-mobile-item">
-                            <a href="men.html" class="nav__menu-mobile-link">Мужчины</a>
-                        </li>
-                        <li class="nav__menu-mobile-item">
-                            <a href="women.html" class="nav__menu-mobile-link">Женщины</a>
-                        </li>
-                        <li class="nav__menu-mobile-item">
-                            <a href="children.html" class="nav__menu-mobile-link">Дети</a>
-                        </li>
-                        <li class="nav__menu-mobile-item">
-                            <a href="contacts.html" class="nav__menu-mobile-link">Контакты</a>
-                        </li>
-                    </ul>                    
-                </nav>
-                <div class="page-header__time-wrapper">
-                    <div class="page-header__time">
-                        <span>Ежедневно 8-22 по записи</span>                    
-                    </div>
-                    <button class="page-header__button-subscribe subscribe__open">
-                        <img src="img/button.png">                    
-                        <span>Записаться на процедуру</span>
-                    </button>
-                </div>
-                <div class="page-header__address-wrapper">
-                    <button class="page-header__button-callback callback__open">
-                        <img src="img/button.png">
-                        <span>Обратный звонок</span>
-                    </button>
-                    <div class="page-header__address">
-                        <span>ул. Новаторов дом 10к1</span>
-                    </div>
-                </div>
-                <div class="page-header__tel">                    
-                    <a href="tel:4959362430" class="page-header__tel-number">
-                        <img src="img/phone.png">
-                        <span>(495) 936-24-30</span>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Haircut</title>
+</head>
+
+<body class="page">
+
+    <header class="page-header">
+        <div class="page-header__wrapper">
+            <nav class="page-header__nav nav">
+                <div class="nav__metro">
+                    <a href="contacts.html" class="nav__metro-link">
+                        <img src="img/metro.png" class="nav__metro-img">
+                        <span class="nav__metro-text">Калужская</span>
                     </a>
                 </div>
-            </div>    
-        </header>
-
-        <section class="menu" style="order: 0">
-            <ul class="menu__nav">
-                <li class="menu__nav-item">
-                    <a href="about.html" class="menu__nav-link">О салоне</a>
-                </li>
-                <li class="menu__nav-item">
-                    <a href="men.html" class="menu__nav-link">Мужчины</a>
-                </li>
-                <li class="menu__nav-item">
-                    <a href="women.html" class="menu__nav-link">Женщины</a>
-                </li>
-                <li class="menu__nav-item">
-                    <a href="children.html" class="menu__nav-link">Дети</a>
-                </li>
-                <li class="menu__nav-item">
-                    <a href="contacts.html" class="menu__nav-link">Контакты</a>
-                </li>
-            </ul>
-        </section>
-
-        <section class="haircut">
-            <div class="haircut__div">
-            <img class="haircut__img" src="img/menCut-pro.jpg">
-            <div class="haircut__wrap">
-            <h3 class="haircut__title">Стрижка</h3>
-            <p>
-                <span>
-                    Как правило, мы стрижом ножницами, а также машинкой,<br>
-                    мастер индивидуально подбирает способ.
-                </span>
-                <span>
-                    Так же вы получите рекомендации по уходу за волосами в домашних<br>
-                    условиях.
-                </span>
-            </p>
-            <form>
-                <label>
-                    <input type="radio" name="cut-group">
-                    <span class="span">Стрижка 1 000 р - 1 200 р</span>
-                </label>
-                <label>
-                    <input type="radio" name="cut-group">
-                    <span class="span">Стрижка на голо 500 р</span>
-                </label>
-                <label>
-                    <input type="radio" name="cut-group">
-                    <span class="span">Стрижка насадками 600 р</span>
-                </label>
-                <label>
-                    <input type="radio" name="cut-group">
-                    <span class="span">Укладка волос 600 р - 900 р</span>
-                </label>
-                <label>
-                    <input type="radio" name="cut-group">
-                    <span class="span">Массаж головы 500 р</span>
-                </label>
-                <button type="submit" class="haircut__button">
-                    <img src="img/button.png">
-                    <p>Записаться на процедуру</p>
+                <div class="nav__logo">
+                    <a href="index.html" class="nav__logo-link">
+                        <img src="img/logo.png" class="nav__logo-img">
+                        <span class="nav__logo-text">Салон красоты</span>
+                    </a>
+                </div>
+                <button class="nav__open-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </button>
-            </form>
-            </div>
-            </div>
-            <section class="slider">            
-                <ul class="slider__list">
-                    <li class="slider__slide" id="slide1">
-                        <div>
-                        <span class="slider__slide-title">
-                            Разорви<br> надоевший образ
-                        </span>
-                        <span class="slider__slide-text">
-                            Всегда рады вам, салон красоты &laquoNG&raquo
-                        </span>
-                        <img class="slider__slide-design" src="img/slide-design.png">
-                        </div> 
+                <button class="nav__close-button">
+                    <div></div>
+                    <div></div>
+                </button>
+                <ul class="nav__menu-mobile">
+                    <li class="nav__menu-mobile-item">
+                        <a href="about.html" class="nav__menu-mobile-link">О салоне</a>
                     </li>
-                    <li class="slider__slide" id="slide2">
-                        <div>
-                        <h3>&laquoПилона терапия&raquo</h3>                    
-                        <span class="slider__slide-text">
-                             Комплексное омоложение лица, подходит женщинам,<br>
-                             так и мужчинам. 5 процедур, всего за 15 000 руб! 
-                        </span>
-                        <span class="slider__slide-sale">Экономия 2 500 руб</span>
-                        <button class="slider__slide-button">
-                            <span>Принять участие</span>
-                            <div class="black"></div>
-                            <img class="slide__slide-red-but" src="img/slide2but.png">
-                        </button>
-                        <img class="slider__slide-design" src="img/slide-design.png">
-                        </div>
+                    <li class="nav__menu-mobile-item">
+                        <a href="men.html" class="nav__menu-mobile-link">Мужчины</a>
+                    </li>
+                    <li class="nav__menu-mobile-item">
+                        <a href="women.html" class="nav__menu-mobile-link">Женщины</a>
+                    </li>
+                    <li class="nav__menu-mobile-item">
+                        <a href="children.html" class="nav__menu-mobile-link">Дети</a>
+                    </li>
+                    <li class="nav__menu-mobile-item">
+                        <a href="contacts.html" class="nav__menu-mobile-link">Контакты</a>
                     </li>
                 </ul>
-                <div class="slider__controls">
-                    <input type="radio" id="btn1" name="slider-toggle" checked="">
-                    <input type="radio" id="btn2" name="slider-toggle">
-                    <div class="slider__buttons">
-                        <label for="btn1"></label>
-                        <label for="btn2"></label>
+            </nav>
+            <div class="page-header__time-wrapper">
+                <div class="page-header__time">
+                    <span>Ежедневно 8-22 по записи</span>
+                </div>
+                <button class="page-header__button-subscribe subscribe__open">
+                    <img src="img/button.png">
+                    <span>Записаться на процедуру</span>
+                </button>
+            </div>
+            <div class="page-header__address-wrapper">
+                <button class="page-header__button-callback callback__open">
+                    <img src="img/button.png">
+                    <span>Обратный звонок</span>
+                </button>
+                <div class="page-header__address">
+                    <span>ул. Новаторов дом 10к1</span>
+                </div>
+            </div>
+            <div class="page-header__tel">
+                <a href="tel:4959362430" class="page-header__tel-number">
+                    <img src="img/phone.png">
+                    <span>(495) 936-24-30</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu" style="order: 0">
+        <ul class="menu__nav">
+            <li class="menu__nav-item">
+                <a href="about.html" class="menu__nav-link">О салоне</a>
+            </li>
+            <li class="menu__nav-item">
+                <a href="men.html" class="menu__nav-link">Мужчины</a>
+            </li>
+            <li class="menu__nav-item">
+                <a href="women.html" class="menu__nav-link">Женщины</a>
+            </li>
+            <li class="menu__nav-item">
+                <a href="children.html" class="menu__nav-link">Дети</a>
+            </li>
+            <li class="menu__nav-item">
+                <a href="contacts.html" class="menu__nav-link">Контакты</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="haircut">
+        <div class="haircut__div">
+            <img class="haircut__img" src="img/menCut-pro.jpg">
+            <div class="haircut__wrap">
+                <h3 class="haircut__title">Стрижка</h3>
+                <p>
+                    <span>
+                        Как правило, мы стрижом ножницами, а также машинкой,<br>
+                        мастер индивидуально подбирает способ.
+                    </span>
+                    <span>
+                        Так же вы получите рекомендации по уходу за волосами в домашних<br>
+                        условиях.
+                    </span>
+                </p>
+                <form>
+                    <label>
+                        <input type="radio" name="cut-group">
+                        <span class="span">Стрижка 1 000 р - 1 200 р</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="cut-group">
+                        <span class="span">Стрижка на голо 500 р</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="cut-group">
+                        <span class="span">Стрижка насадками 600 р</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="cut-group">
+                        <span class="span">Укладка волос 600 р - 900 р</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="cut-group">
+                        <span class="span">Массаж головы 500 р</span>
+                    </label>
+                    <button type="submit" class="haircut__button">
+                        <img src="img/button.png">
+                        <p>Записаться на процедуру</p>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <section class="slider">
+            <ul class="slider__list">
+                <li class="slider__slide" id="slide1">
+                    <div class="slider__slide-wrap">
+                        <img class="slider__slide-img" src="img/slide1-big.jpg">
+                        <div class="slider__slide-textblock">
+                            <span class="slider__slide-title">
+                                Разорви<br>
+                                надоевший образ
+                            </span>
+                            <span class="slider__slide-text">
+                                Всегда рады вам, салон красоты &laquoNG&raquo
+                            </span>
+                        </div>
                     </div>
-                </div>            
-            </section>
-            <section class="men">
+                </li>
+                <li class="slider__slide" id="slide2">
+                    <div class="slider__slide-wrap">
+                        <img class="slider__slide-img" src="img/slide2.jpg">
+                        <div class="slider__slide-textblock">
+                            <h3>&laquoПилона терапия&raquo</h3>
+                            <span class="slider__slide-text">
+                                Комплексное омоложение лица, подходит женщинам,
+                                <br> так и мужчинам. 5 процедур, всего за 15 000 руб!
+                            </span>
+                            <span class="slider__slide-sale">Экономия 2 500 руб</span>
+                            <button class="slider__slide-button popup__open">
+                                <span>Принять участие</span>
+                                <div class="black"></div>
+                                <img class="slide__slide-red-but" src="img/slide2but.png">
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="slider__controls">
+                <input type="radio" id="btn1" name="slider-toggle" checked="">
+                <input type="radio" id="btn2" name="slider-toggle">
+                <div class="slider__buttons">
+                    <label for="btn1"></label>
+                    <label for="btn2"></label>
+                </div>
+            </div>
+        </section>
+        <section class="men">
             <ul class="men-services">
                 <h4 class="men-services__title">Вас могут заинтересовать другие услугу из этого раздела</h4>
                 <li class="men-services__item">
@@ -208,220 +215,222 @@
                     </a>
                 </li>
             </ul>
-            </section>
-            <section class="catalog">
-                <h3 class="catalog__title">Другие категории</h3>
-                <ul class="catalog__list">                    
-                    <li class="catalog__item catalog__item-women">                                   
-                        <a href="women/women/html" class="catalog__item-link">                                          
-                            <img src="img/design.png" class="catalog__item-design">
-                            <span>Женщины</span>
-                        </a>
-                        <ul class="catalog__item-list">
-                            <a href="haircut.html" class="catalog__item-list-link">
-                                <li>
-                                    Стрижка
-                                </li>
-                            </a>
-                            <a href="#" class="catalog__item-list-link">
-                                <li>
-                                    Стрижка бороды
-                                </li>
-                            </a>
-                            <a href="#" class="catalog__item-list-link">
-                                <li>
-                                    Уход за лицом
-                                </li>
-                            </a>
-                            <a href="#" class="catalog__item-list-link">
-                                <li>
-                                    Маникюр / педикюр
-                                </li>
-                            </a>
-                            <a href="#" class="catalog__item-list-link">
-                                <li>
-                                    Депиляция воск / шугаринг
-                                </li>
-                            </a>    
-                        </ul>
-                    </li>
-                    <li class="catalog__item catalog__item-children">                                      
-                        <a href="children.html" class="catalog__item-link">
-                            <img src="img/design.png" class="catalog__item-design">
-                            <span>Дети</span>
-                        </a>
-                        <ul class="catalog__item-list">
-                            <a href="haircut.html" class="catalog__item-list-link">
-                                <li>
-                                    Стрижка
-                                </li>
-                            </a>
-                            <a href="#" class="catalog__item-list-link">
-                                <li>
-                                    Стрижка бороды
-                                </li>
-                            </a>
-                            <a href="#" class="catalog__item-list-link">
-                                <li>
-                                    Уход за лицом
-                                </li>
-                            </a>
-                            <a href="#" class="catalog__item-list-link">
-                                <li>
-                                    Маникюр / педикюр
-                                </li>
-                            </a>                        
-                        </ul>
-                    </li>
-                </ul>
-                <div class="info">
-                        <span>Информация, предоставленная на сайте, не является публичной</span>
-                    </div>               
-            </section>            
         </section>
-
-        <footer class="page-footer">
-                <img class="page-footer__design" src="img/footer-des.png">
-                <div class="page-footer__contacts"><div class="page-footer__adapt">
-                    <div class="page-footer__contacts-defend">
-                        <a href="#" class="page-footer__contacts-defend-link">Положение о защите персональных данных.</a>
-                    </div>
-                    <div class="page-footer__contacts-inst">
-                        <a href="#" class="page-footer__contacts-inst-link">
-                            <img src="img/inst.png" class="page-footer__contacts-inst-img">
-                        </a>                     
-                    </div>
-                    </div>
-                    <div class="page-footer__contacts-address">
-                        <span class="page-footer__contacts-metro">ст. м.: Калужская</span>
-                        <span class="page-footer__contacts-street">
-                            Обручевский район, ул. Новаторов дом 10 к1<br>
-                            +7(968)327-0-327 / +7(495)936-24-30
-                        </span>
-                        <span class="page-footer__contacts-time">Ежедневно 08:00-22:00 по записи.</span>
-                    </div>
-                    <div class="page-footer__contacts-copyright">
-                        <span class="page-footer__contacts-copyright-rights">© Все права защищены, 16+</span>
-                        <span class="page-footer__contacts-copyright-taboo">
-                            Запрещается полное или частичное копировние<br>
-                            материала, без активной ссылки на сайт.
-                        </span>
-                        <span class="page-footer__contacts-copyright-OOO">
-                            OOO  «НГ-салон»  ОГРН:026410640<br>
-                            ИНН:0051561650 / КПП:3219810213250
-                        </span>
-                    </div>
-                </div>
-                <div class="page-footer__ad">
-                    <p class="page-footer__ad-text">
-                        <span>Разработка и поддержка сайта <a href="yaroshenko-d.ru" class="page-footer__ad-link">yaroshenko-d.ru</a></span>
-                    </p>
-                </div>
-            </footer>
-
-            <div class="subscribe-popup">
-                <div class="subscribe-popup__wrapper">
-                    <form method="POST" class="subscribe-popup__form">
-                        <h4 class="subscribe-popup__form-title">Записаться на процедуру</h4>
-                        <div class="subscribe-popup__form-close subscribe-popup__close">
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <fieldset>
-                            <select name="subscribe-popup">
-                                <option>Пилона терапия</option>                        
-                            </select>
-                            <input type="date" name="date" placeholder="Выберете дату">
-                            <input type="time" name="time" placeholder="Выберете время">
-                            <input type="text" name="name" placeholder="Как к вам обращаться">
-                            <input type="tel" name="tel" placeholder="Телефон: +7 (">
-                        </fieldset>
-                        <label class="subscribe-popup__form-ball">
-                            <input type="checkbox">
-                            <img src="img/sub-ball.png">                        
-                            <img src="img/form-ok.png">
-                        </label>
-                        <p>
-                            <a href="#" class="subscribe-popup__form-license">
-                                Согласие на обработку персональных данных
-                            </a>
-                        </p>
-                        <button class="subscribe-popup__form-button" type="submit">
-                            <img src="img/sub-pop.png">
-                            <div class="black"></div>
-                            <span>Отправить заявку</span>
-                        </button>
-                        <div class="subscribe-popup__form-blue">
-                            <img src="img/big-blue.png">
-                            <h4>Мужчины</h4>
-                            <span>
-                                &lt;услуги из категории&gt;                         
-                            </span>
-                            <h4>Женщины</h4>
-                                <span>
-                                    &lt;услуги из категории&gt;                         
-                            </span>
-                            <h4>Дети</h4>
-                                <span>
-                                    &lt;услуги из категории&gt;                         
-                            </span>
-                            </div> 
-                        </form>
-                    </div>
+        <section class="catalog">
+            <h3 class="catalog__title">Другие категории</h3>
+            <ul class="catalog__list">
+                <li class="catalog__item catalog__item-women">
+                    <a href="women.html" class="catalog__item-link">
+                        <img src="img/design.png" class="catalog__item-design">
+                        <span>Женщины</span>
+                    </a>
+                    <ul class="catalog__item-list">
+                        <a href="haircut.html" class="catalog__item-list-link">
+                            <li>
+                                Стрижка
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Стрижка бороды
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Уход за лицом
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Маникюр / педикюр
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Депиляция воск / шугаринг
+                            </li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="catalog__item catalog__item-children">
+                    <a href="children.html" class="catalog__item-link">
+                        <img src="img/design.png" class="catalog__item-design">
+                        <span>Дети</span>
+                    </a>
+                    <ul class="catalog__item-list">
+                        <a href="haircut.html" class="catalog__item-list-link">
+                            <li>
+                                Стрижка
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Стрижка бороды
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Уход за лицом
+                            </li>
+                        </a>
+                        <a href="#" class="catalog__item-list-link">
+                            <li>
+                                Маникюр / педикюр
+                            </li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+            <div class="info">
+                <span>Информация, предоставленная на сайте, не является публичной</span>
             </div>
-    
-            <div class="callback-popup">
-                <div class="callback-popup__wrapper">
-                    <form method="POST" class="callback-popup__form">
-                        <h4 class="callback-popup__form-title">Обратный звонок</h4>
-                        <div class="callback-popup__form-close callback-popup__close">
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <fieldset>                        
-                            <input type="text" name="name" placeholder="Как к вам обращаться">
-                            <input type="tel" name="tel" placeholder="Телефон: +7 (">
-                        </fieldset>
-                        <label class="callback-popup__form-ball">
-                            <input type="checkbox">
-                            <img src="img/call.png">                        
-                            <img src="img/form-ok.png">
-                        </label>
-                        <p>
-                            <a href="#" class="callback-popup__form-license">
-                                Согласие на обработку персональных данных
-                            </a>
-                        </p>
-                        <button class="callback-popup__form-button" type="submit">
-                            <img src="img/button-m.png">
-                            <div class="black"></div>
-                            <span>Отправить заявку</span>
-                        </button>
-                        <div class="callback-popup__form-blue">
-                            <img src="img/big-blue.png">
-                            <h4>Мужчины</h4>
-                            <span>
-                                &lt;услуги из категории&gt;                         
-                            </span>
-                            <h4>Женщины</h4>
-                                <span>
-                                    &lt;услуги из категории&gt;                         
-                            </span>
-                            <h4>Дети</h4>
-                                <span>
-                                    &lt;услуги из категории&gt;                         
-                            </span>
-                            </div> 
-                        </form>
-                    </div>
-            </div>
-    
-            <script src="js/callback.js"></script>
-        
-                <script src="js/subscribe.js"></script>
-       
-        <script src="js/checkbox.js"></script>    
-        <script src="js/menu.js"></script>
+        </section>
+    </section>
 
-    </body>
+    <footer class="page-footer">
+        <img class="page-footer__design" src="img/footer-des.png">
+        <div class="page-footer__contacts">
+            <div class="page-footer__adapt">
+                <div class="page-footer__contacts-defend">
+                    <a href="#" class="page-footer__contacts-defend-link">Положение о защите персональных данных.</a>
+                </div>
+                <div class="page-footer__contacts-inst">
+                    <a href="#" class="page-footer__contacts-inst-link">
+                        <img src="img/inst.png" class="page-footer__contacts-inst-img">
+                    </a>
+                </div>
+            </div>
+            <div class="page-footer__contacts-address">
+                <span class="page-footer__contacts-metro">ст. м.: Калужская</span>
+                <span class="page-footer__contacts-street">
+                    Обручевский район, ул. Новаторов дом 10 к1<br>
+                    +7(968)327-0-327 / +7(495)936-24-30
+                </span>
+                <span class="page-footer__contacts-time">Ежедневно 08:00-22:00 по записи.</span>
+            </div>
+            <div class="page-footer__contacts-copyright">
+                <span class="page-footer__contacts-copyright-rights">© Все права защищены, 16+</span>
+                <span class="page-footer__contacts-copyright-taboo">
+                    Запрещается полное или частичное копировние<br>
+                    материала, без активной ссылки на сайт.
+                </span>
+                <span class="page-footer__contacts-copyright-OOO">
+                    OOO «НГ-салон» ОГРН:026410640<br>
+                    ИНН:0051561650 / КПП:3219810213250
+                </span>
+            </div>
+        </div>
+        <div class="page-footer__ad">
+            <p class="page-footer__ad-text">
+                <span>Разработка и поддержка сайта <a href="yaroshenko-d.ru" class="page-footer__ad-link">yaroshenko-d.ru</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <div class="subscribe-popup">
+        <div class="subscribe-popup__wrapper">
+            <form method="POST" class="subscribe-popup__form">
+                <h4 class="subscribe-popup__form-title">Записаться на процедуру</h4>
+                <div class="subscribe-popup__form-close subscribe-popup__close">
+                    <div></div>
+                    <div></div>
+                </div>
+                <fieldset>
+                    <select name="subscribe-popup">
+                        <option>Пилона терапия</option>
+                    </select>
+                    <input type="date" name="date" placeholder="Выберете дату">
+                    <input type="time" name="time" placeholder="Выберете время">
+                    <input type="text" name="name" placeholder="Как к вам обращаться">
+                    <input type="tel" name="tel" placeholder="Телефон: +7 (">
+                </fieldset>
+                <label class="subscribe-popup__form-ball">
+                    <input type="checkbox">
+                    <img src="img/sub-ball.png">
+                    <img src="img/form-ok.png">
+                </label>
+                <p>
+                    <a href="#" class="subscribe-popup__form-license">
+                        Согласие на обработку персональных данных
+                    </a>
+                </p>
+                <button class="subscribe-popup__form-button" type="submit">
+                    <img src="img/sub-pop.png">
+                    <div class="black"></div>
+                    <span>Отправить заявку</span>
+                </button>
+                <div class="subscribe-popup__form-blue">
+                    <img src="img/big-blue.png">
+                    <h4>Мужчины</h4>
+                    <span>
+                        &lt;услуги из категории&gt;
+                    </span>
+                    <h4>Женщины</h4>
+                    <span>
+                        &lt;услуги из категории&gt;
+                    </span>
+                    <h4>Дети</h4>
+                    <span>
+                        &lt;услуги из категории&gt;
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="callback-popup">
+        <div class="callback-popup__wrapper">
+            <form method="POST" class="callback-popup__form">
+                <h4 class="callback-popup__form-title">Обратный звонок</h4>
+                <div class="callback-popup__form-close callback-popup__close">
+                    <div></div>
+                    <div></div>
+                </div>
+                <fieldset>
+                    <input type="text" name="name" placeholder="Как к вам обращаться">
+                    <input type="tel" name="tel" placeholder="Телефон: +7 (">
+                </fieldset>
+                <label class="callback-popup__form-ball">
+                    <input type="checkbox">
+                    <img src="img/call.png">
+                    <img src="img/form-ok.png">
+                </label>
+                <p>
+                    <a href="#" class="callback-popup__form-license">
+                        Согласие на обработку персональных данных
+                    </a>
+                </p>
+                <button class="callback-popup__form-button" type="submit">
+                    <img src="img/button-m.png">
+                    <div class="black"></div>
+                    <span>Отправить заявку</span>
+                </button>
+                <div class="callback-popup__form-blue">
+                    <img src="img/big-blue.png">
+                    <h4>Мужчины</h4>
+                    <span>
+                        &lt;услуги из категории&gt;
+                    </span>
+                    <h4>Женщины</h4>
+                    <span>
+                        &lt;услуги из категории&gt;
+                    </span>
+                    <h4>Дети</h4>
+                    <span>
+                        &lt;услуги из категории&gt;
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/callback.js"></script>
+
+    <script src="js/subscribe.js"></script>
+
+    <script src="js/checkbox.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
 </html>

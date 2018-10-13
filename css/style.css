@@ -921,7 +921,7 @@ template {
   content: url(../img/slide-design.png);
   position: absolute;
   top: 111px;
-  left: 304px;
+  left: calc(50% - 47px);
 }
 .slider .slider__list .slider__slide {
   height: 130px;
@@ -1079,6 +1079,9 @@ template {
           box-shadow: 2px 2px 5px #751d1b;
 }
 @media (min-width: 768px) {
+  .slider .slider__list::after {
+    top: 181px;
+  }
   .slider .slider__list .slider__slide {
     height: 200px;
   }
@@ -1135,6 +1138,9 @@ template {
   }
 }
 @media (min-width: 1170px) {
+  .slider .slider__list::after {
+    top: 431px;
+  }
   .slider .slider__list .slider__slide {
     height: 450px;
   }
@@ -2903,6 +2909,9 @@ template {
 @media (min-width: 1170px) {
   .hairdressing {
     width: 1170px;
+  }
+  .hairdressing .catalog__list {
+    padding: 0 180px;
   }
   .hairdressing .hairdressing__title {
     margin-left: 60px;
